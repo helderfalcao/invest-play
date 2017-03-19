@@ -19,5 +19,6 @@ app.set('views', path.join(__dirname, '/client/views'));
 app.set('view engine', 'pug');
 app.use('/', clientRoutes);
 
-app.listen(8075);
+var serverPort = process.env.PORT ? process.env.PORT : '8075';
+app.listen(serverPort);
 console.log("server running...");
