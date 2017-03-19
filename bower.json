@@ -1,0 +1,21 @@
+{
+  "name": "investplay",
+  "description": "Projeto Landpage para investplay",
+  "main": "index.js",
+  "authors": [
+    "Helder Falcão"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "game",
+    "inestimento"
+  ],
+  "homepage": "https://github.com/helderfalcao/invest-play",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
