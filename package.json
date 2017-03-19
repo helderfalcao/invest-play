@@ -1,0 +1,23 @@
+{
+  "name": "investplay",
+  "version": "1.0.0",
+  "description": "Projeto Landpage para investplay",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helderfalcao/invest-play.git"
+  },
+  "keywords": [
+    "game",
+    "inestimento"
+  ],
+  "author": "Helder Falcão",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helderfalcao/invest-play/issues"
+  },
+  "homepage": "https://github.com/helderfalcao/invest-play#readme"
+}
