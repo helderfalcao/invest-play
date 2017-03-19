@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "bower install",
+    "start" : "node index.js",
     "test": "mocha"
   },
   "repository": {
