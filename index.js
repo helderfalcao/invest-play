@@ -1,24 +1,40 @@
-// Load Libraries
-var express = require('express');
-var bodyParser = require('body-parser');
-var app = express();
-var path = require('path');
+//Note: This file is provided as an aid to help you get up and running with
+//Electron for desktop apps. See the readme file for more information.
+/* eslint-disable strict, no-var, no-console */
 
-app.use(bodyParser.json());
+'use strict';
 
-//Config
-app.use(bodyParser.json()); // for parsing application/json
-app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+const electron = require('electron');
+const {app} = electron;
+const {BrowserWindow} = electron;
+let mainWindow;
 
-// Routes
-var clientRoutes = require('./client/routes/index')
-app.use(express.static(path.join(__dirname, '/client')));
-app.use(express.static(path.join(__dirname, '/bower_components')));
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') {
+    app.quit();
+  }
+});
 
-app.set('views', path.join(__dirname, '/client/views'));
-app.set('view engine', 'pug');
-app.use('/', clientRoutes);
+app.on('ready', () => {
+  mainWindow = new BrowserWindow({
+    width: 800,
+    height: 600,
+    // Note: The following line turns off Node integration to allow
+    // jQuery to work properly. If you need Node integration, please
+    // see the Electron FAQ for how to enable this:
+    // http://electron.atom.io/docs/faq/
+    webPreferences: {
+      nodeIntegration: false
+    }
+  });
 
-var serverPort = process.env.PORT ? process.env.PORT : '8075';
-app.listen(serverPort);
-console.log("server running...");
+  mainWindow.loadURL(`file://${__dirname}/index.html`);
+  mainWindow.webContents.on('did-finish-load', () => {
+    mainWindow.setTitle(app.getName());
+  });
+  
+  mainWindow.on('closed', () => {
+    mainWindow = null;
+  });
+});
+

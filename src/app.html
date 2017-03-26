@@ -1,0 +1,18 @@
+<template>
+  <require from="bootstrap/css/bootstrap.css"></require>
+  <require from="nav-bar.html"></require>
+  <nav-bar router.bind="router"></nav-bar>
+
+  <div class="container">
+    <div class="row home">
+      <div class="col-md-5 col-md-offset-2">
+        <compose view="./intro/login.html" view-model="./intro/login.js"></compose>
+      </div>
+      <div class="col-md-3">
+        <compose view="./intro/perfil.html" view-model="./intro/perfil.js"></compose>
+        <compose view="./intro/medidor.html" view-model="./intro/medidor.js"></compose>
+        <compose view="./intro/contatos.html" view-model="./intro/contatos.js"></compose>
+      </div>
+    </div>
+  </div>
+</template>
