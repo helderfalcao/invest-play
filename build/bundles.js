@@ -2,7 +2,7 @@ module.exports = {
   "bundles": {
     "dist/app-build": {
       "includes": [
-        "[**/*.js, **/*.png]",
+        "[**/*.js]",
         "**/*.html!text",
         "**/*.css!text",
       ],
