@@ -58,6 +58,11 @@ gulp.task('export-normalized-resources', function() {
   });
 });
 
+gulp.task('export-resources', function () {
+  return gulp.src(paths.resources)
+    .pipe(gulp.dest(paths.exportSrv + paths.resourceRoot));
+});
+
 // use after prepare-release
 gulp.task('export', function(callback) {
   return runSequence(
@@ -65,6 +70,7 @@ gulp.task('export', function(callback) {
     'clean-export',
     'export-normalized-resources',
     'export-copy',
+    'export-resources',
     callback
   );
 });
