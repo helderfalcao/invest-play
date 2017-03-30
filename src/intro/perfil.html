@@ -1,6 +1,18 @@
 <template>
     <div class="jumbotron perfil item">
-        <h4 class="title">${title}</h4>
-        <img src="./resources/images/avatar.png" class="img-rounded perfil-image" width="70px" height="70px" alt="Perfil">
+        <div class="row">
+            <div class="col-md-6 container">
+                <h4 class="title" style="text-align: left;">${title}</h4>
+                <p class="description">
+                     E aí, como será o seu perfíl de investidor 
+                </p>
+                <p class="description">
+                     <a class="link" href="#">Saiba mais...</a>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="./resources/images/avatars.gif" class="img-rounded perfil-image" width="100%" height="auto" alt="Perfil">
+            </div>                        
+        </div>
     </div>
 </template>

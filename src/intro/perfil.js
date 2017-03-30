@@ -4,7 +4,7 @@ import 'fetch';
 
 @inject(HttpClient)
 export class Perfil {
-    title = "Perfil";
+    title = "Meu InvestPlayer";
 
     constructor(http) {
         this.http = http;
