@@ -9,6 +9,7 @@ body {
 .login .title {
   margin-bottom: 50px;
   text-align: center;
+  color: #455A64;
   font-family: 'Roboto Condensed', sans-serif;  
 }
 
@@ -22,6 +23,10 @@ body {
   font-size: 14px;
   text-align: left;
   color: #78909C;
+}
+
+.item .avatar-type {
+  background: #FFF;
 }
 
 .link {
@@ -82,7 +87,8 @@ body {
 }
 
 .login {
-  height: 550px ;
+  height: 550px ;  
+  font-family: 'Roboto Condensed', sans-serif;  
 }
 
 .splash {
