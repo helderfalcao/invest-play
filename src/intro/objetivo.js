@@ -37,10 +37,16 @@ export class objetivo {
     }
 
     continuar() {
-        this.userInfo.objetivo = this.objetivoSelecionado;
+        this.userInfo.objetivo = this.getObjeto(this.objetivoSelecionado);
         this.userInfo.salvarInfoUserObjetivo(this.objetivoSelecionado);
         this.router.navigate("question/" + "58df4248bf76c758b1cfb77d");
-        
-        
+    }
+
+    getObjeto(idObjeto) {
+        for (var ob of this.objetivos) {
+            if (ob._id == idObjeto) {
+                return ob;
+            }
+        }
     }
 }
