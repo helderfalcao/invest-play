@@ -5,11 +5,11 @@
         <div class="row auth-button-container">
             <button type="button" class="btn btn-lg btn-success auth-button">Começar</button>
         </div>
-        <!--<div class="row auth-button-container">
-            <button type="button" class="btn-lg btn-danger auth-button">Login with Google</button>
-        </div>-->
         <div class="row auth-button-container">
-            <button type="button" class="btn btn-lg btn-primary auth-button">Começar com Facebook</button>
+            <a class="btn-lg btn-danger auth-button" href.bind="googleAuthRoute">Login with Google</a>
+        </div>
+        <div class="row auth-button-container">
+            <button type="button" class="btn btn-lg btn-primary auth-button" click.trigger="facebookAuthfRoute">Começar com Facebook</button>
         </div>
         <!--<div class="row auth-button-container">
             <button type="button" class="btn-lg btn-info auth-button">Login with Twitter</button>
