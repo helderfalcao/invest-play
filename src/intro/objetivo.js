@@ -1,4 +1,4 @@
-import { inject } from 'aurelia-framework'; 
+import { inject } from 'aurelia-framework';
 import { HttpService } from '../services/HttpService';
 import { UserInfo } from '../services/UserInfo';
 import { Router } from 'aurelia-router';
@@ -37,7 +37,10 @@ export class objetivo {
     }
 
     continuar() {
-        this.router.navigate("question/" + "58df4248bf76c758b1cfb77d");
         this.userInfo.objetivo = this.objetivoSelecionado;
+        this.userInfo.salvarInfoUserObjetivo(this.objetivoSelecionado);
+        this.router.navigate("question/" + "58df4248bf76c758b1cfb77d");
+        
+        
     }
 }

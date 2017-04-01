@@ -40,8 +40,10 @@ export class questions {
         console.log(this.resposta);
         var opcao = this.getResposta(this.resposta);
         this.salvarResposta(opcao);
-        if (opcao.proxima_pergunta != 'string' || opcao.proxima_pergunta != '') {
+        if (opcao.proxima_pergunta != 'string' && opcao.proxima_pergunta != '') {
             this.router.navigate("question/" + opcao.proxima_pergunta);
+        } else {
+            this.router.navigate("info1");
         }
     }
 

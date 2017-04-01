@@ -14,7 +14,8 @@ export class App {
     config.map([
       { route: ['', 'login'], name: 'login', moduleId: 'intro/login', nav: true, title: 'Login investplay' },
       { route: 'objetivo', name: 'objetivo', moduleId: 'intro/objetivo', nav: true, title: 'Pré Pergunta Investplay' },
-      { route: 'question/:id', name: 'question', moduleId: 'intro/questions', title: 'Perguntas Investplay' }
+      { route: 'question/:id', name: 'question', moduleId: 'intro/questions', title: 'Perguntas Investplay' },
+      { route: 'info1', name: 'info1', moduleId: 'intro/info_1', title: 'Investplay Info' }
     ]);
 
     this.router = router;
