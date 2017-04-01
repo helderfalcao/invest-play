@@ -1,6 +1,6 @@
 import { HttpClient } from 'aurelia-fetch-client';
 import { inject } from 'aurelia-framework';
-import { ServiceUtils } from './ServicesUtils';
+import { ServiceUtils } from './ServiceUtils';
 
 @inject(HttpClient, ServiceUtils)
 export class HttpService {
