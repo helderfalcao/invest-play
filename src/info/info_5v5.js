@@ -3,7 +3,7 @@ import { HttpClient } from 'aurelia-fetch-client';
 import 'fetch';
 
 @inject(HttpClient)
-export class info_5v2 {    
+export class info_5v5 {    
     
     constructor(http) {
         this.http = http;

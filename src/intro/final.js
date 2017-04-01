@@ -3,13 +3,13 @@ import { HttpClient } from 'aurelia-fetch-client';
 import 'fetch';
 
 @inject(HttpClient)
-export class info_5v4 {    
+export class Final {    
     
     constructor(http) {
         this.http = http;
     }
 
     activate() {
-
     }
+
 }
