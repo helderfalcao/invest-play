@@ -343,6 +343,15 @@ div.au-stagger {
   margin-left: -75px;
   left: 50%;
 }
+.resultado-image-4 {
+  position: relative;
+  width: 300px;
+  border-radius: 10px;
+  height: auto;
+  margin-left: -150px;
+  left: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)  
+}
 .resultado-image-tesouro {
   position: relative;
   width: 300px;
