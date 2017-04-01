@@ -24,7 +24,8 @@ export class App {
       { route: 'info5v2', name: 'info5v2', moduleId: 'info/info_5v2', title: 'Investplay Info' },
       { route: 'info5v3', name: 'info5v3', moduleId: 'info/info_5v3', title: 'Investplay Info' },
       { route: 'info5v4', name: 'info5v4', moduleId: 'info/info_5v4', title: 'Investplay Info' },
-      { route: 'info5v5', name: 'info5v5', moduleId: 'info/info_5v5', title: 'Investplay Info' }
+      { route: 'info5v5', name: 'info5v5', moduleId: 'info/info_5v5', title: 'Investplay Info' },
+      { route: 'final', name: 'final', moduleId: 'intro/final', title: 'Investplay Info' }
     ]);
 
     this.router = router;

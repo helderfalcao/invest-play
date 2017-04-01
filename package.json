@@ -1,6 +1,6 @@
 {
   "name": "investplay",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Projeto Landpage para investplay",
   "main": "dist/main.js",
   "scripts": {
