@@ -359,6 +359,13 @@ div.au-stagger {
   margin-left: -150px;
   left: 50%;
 }
+.resultado-image-gra {
+  position: relative;
+  width: 400px;
+  height: auto;
+  margin-left: -200px;
+  left: 50%;
+}
 
 
 /***********************************
