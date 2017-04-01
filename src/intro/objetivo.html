@@ -1,27 +1,20 @@
 <template>
-    <div class="jumbotron login">        
+    <div class="jumbotron login">
         <form>
             <h3 class="title col-md-10 col-md-offset-1">
-                Olá! Permita saber um pouquinho sobre um sonho seu!
-            </h3>                
-            <div class="form-group">                
-                <input type="email" class="form-control input-lg" id="exampleInputEmail1" placeholder="Qual o seu nome?">
-            </div>
+                Olá ${user.name}! Permita saber um pouquinho sobre um sonho seu!
+            </h3>
             <h3 class="title col-md-10 col-md-offset-1">
                 Agora escolha um dos sonhos/objetivos abaixo:
-            </h3>                
+            </h3>
             <div class="form-group">
-                <select class="form-control input-lg">
-                    <option>Comprar um carro novo (35.000,00)</option>
-                    <option>Comprar sua casa própria (300.000,00)</option>
-                    <option>Fazer aquela linda viagem dos sonhos (15.000)</option>
-                    <option>Aposentadoria (100.000)</option>
-                    <option>Outro (Segredinho né...)</option>
-                </select>                                
-            </div>                         
-            <div class="col-md-4 pull-right">
-                <button class="btn btn-lg btn-success auth-button">Continuar</button>
+                <select value.bind="objetivoSelecionado"  class="form-control input-lg">
+                    <option repeat.for="objetivo of objetivos" value.bind="objetivo._id">${objetivo.name}</option>
+                </select>
             </div>
-        </form>                
+            <div class="col-md-4 pull-right">
+                <button click.delegate="continuar()" class="btn btn-lg btn-success auth-button">Continuar</button>
+            </div>
+        </form>
     </div>
 </template>

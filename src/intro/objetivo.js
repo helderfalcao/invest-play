@@ -1,19 +1,25 @@
 import { inject } from 'aurelia-framework';
 import { HttpService } from '../services/HttpService';
-import { ServiceUtils } from '../services/ServiceUtils';
+import { UserInfo } from '../services/UserInfo';
+import { Router } from 'aurelia-router';
 import 'fetch';
 
-@inject(HttpService, ServiceUtils)
+@inject(HttpService, UserInfo, Router)
 export class objetivo {
 
-    constructor(http, utils) {
+    objetivoSelecionado;
+
+    constructor(http, userInfo, router) {
         this.http = http;
-        this.utils = utils;
+        this.userInfo = userInfo;
+        this.router = router;
+        this.loadUserInfo();
+        this.loadObjetivos();
     }
 
-    activate() {
-        let request = 'objetivo';
-        return this.httpService.GET(request)
+    loadObjetivos() {
+        let request = 'objetivos';
+        this.http.GET(request)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
@@ -21,5 +27,17 @@ export class objetivo {
             }).catch(function (error) {
                 console.log(error);
             });;;
+    }
+
+    loadUserInfo() {
+        var This = this;
+        this.userInfo.authUser(function (user) {
+            This.user = user;
+        });
+    }
+
+    continuar() {
+        this.router.navigate("question");
+        this.userInfo.objetivo = this.objetivoSelecionado;
     }
 }
