@@ -2,17 +2,20 @@ import { inject } from 'aurelia-framework';
 import { HttpService } from '../services/HttpService';
 import { ServiceUtils } from '../services/ServiceUtils';
 import { UserInfo } from '../services/UserInfo';
+import { Router } from 'aurelia-router';
 import 'fetch';
 
-@inject(HttpService, ServiceUtils, UserInfo)
+@inject(HttpService, ServiceUtils, UserInfo, Router)
 export class questions {
 
     pergunta;
+    resposta;
 
-    constructor(http, utils, userInfo) {
+    constructor(http, utils, userInfo, router) {
         this.http = http;
         this.utils = utils;
         this.userInfo = userInfo;
+        this.router = router;
     }
 
     activate(params) {
@@ -30,7 +33,43 @@ export class questions {
                 This.pergunta = data;
             }).catch(function (error) {
                 console.log(error);
-            });;;
+            });
+    }
 
+    continuar() {
+        console.log(this.resposta);
+        var opcao = this.getResposta(this.resposta);
+        this.salvarResposta(opcao);
+        if (opcao.proxima_pergunta != 'string' || opcao.proxima_pergunta != '') {
+            this.router.navigate("question/" + opcao.proxima_pergunta);
+        }
+    }
+
+    salvarResposta(opcao) {
+        var This = this;
+        this.userInfo.authUser(function (user) {
+            var resposta = {
+                "perguntaId": This.pergunta._id,
+                "opcaoEscolhida": opcao._id,
+                "idUsuario": user._id
+            };
+            let request = 'respostas';
+            return This.http.POST(request, resposta)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    This.pergunta = data;
+                }).catch(function (error) {
+                    console.log(error);
+                });
+        });
+    }
+
+    getResposta(opcao) {
+        for (var op of this.pergunta.opcoes) {
+            if (opcao == op.opcao) {
+                return op;
+            }
+        }
     }
 }    

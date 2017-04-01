@@ -1,15 +1,18 @@
 <template>
-    <div class="jumbotron login">        
+    <div class="jumbotron login">
         <form if.bind="pergunta">
             <h3 class="title">
                 ${pergunta.name}
-            </h3>                
+            </h3>
             <div class="radio item-resposta" repeat.for="opcao of pergunta.opcoes">
                 <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                    <input type="radio" name="optionsRadios" value.bind="opcao.opcao" checked.bind="$parent.resposta">
                     ${opcao.descricao}
                 </label>
             </div>
-        </form>                
+            <div class="col-md-4 pull-right">
+                <button click.delegate="continuar()" class="btn btn-lg btn-success auth-button">Continuar</button>
+            </div>
+        </form>
     </div>
 </template>
