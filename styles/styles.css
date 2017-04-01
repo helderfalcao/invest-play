@@ -29,6 +29,9 @@ body {
   width: 120px;
   margin-top: 10px; 
 }
+.medidor-invest {
+  margin-top: 30px; 
+}
 
 .link {
   color: #6ab344;
@@ -46,7 +49,7 @@ body {
 
 .container .jumbotron.login {
   padding: 30px;
-  height: 600px ;
+  min-height: 700px ;
   background: #FFF;
   box-shadow: 0 0 25px rgba(0,0,0,0.04);
   border-radius: 10px;
@@ -304,7 +307,10 @@ div.au-stagger {
 .btn {
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
-  border-radius: 100px !important;
+  border-radius: 100px !important; 
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis; 
 }
 
 .item-resposta {
@@ -365,8 +371,60 @@ div.au-stagger {
   margin-left: -200px;
   left: 50%;
 }
+.marca {
+  position: relative;
+  width: 300px;
+  height: auto;
+  margin-left: -150px;
+  left: 50%;
+}
+@media only screen and (max-width : 1200px) {
+}
 
+@media only screen and (max-width : 992px) {
+  .item .description {
+    display: none;
+  }
+  .item .avatar-type img {  
+    width: 100px;
+    margin-top: 0px; 
+  }
+  .medidor-invest {
+    margin-right: 300px;
+    margin-top: -30px; 
+  }	  
+}
 
+@media only screen and (max-width : 768px) {
+	.medidor-invest {
+    margin-right: 200px;
+    margin-top: -30px; 
+  }	 
+}
+@media only screen and (max-width : 460px) {
+  body {   
+    padding-top: 60px;    
+  }
+  .navbar_top {    
+    height: 50px;  
+  }
+  .img_logo {
+    width: 120px;
+    margin-top: -12 px;  
+    margin-left: 75px;
+  }
+  .item .description {
+    display: none;
+  }
+  .item .avatar-type img {  
+    width: 100px;
+    margin-top: 0px; 
+  }	
+  .medidor-invest {
+    margin-right: 50px;
+    margin-top: 20px; 
+  }	 
+}
 /***********************************
 ******* CSS PROGRESS ******
 ************************************/

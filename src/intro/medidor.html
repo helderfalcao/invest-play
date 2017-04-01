@@ -1,8 +1,14 @@
 <template>
     <div class="jumbotron medidor item">
-        <h4 class="title">${title}</h4>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 container">
+                <h4 class="title" style="text-align: left;">InvestDicas</h4>
+                <p class="description">
+                     Esse é o seu contador de InvestDicas, ele te mostra quantas etapas restam após a definição 
+                     do seu perfíl.
+                </p>                
+            </div>
+            <div class="col-md-6 medidor-invest">
                 <div class="c100 small p20 green pull-right">
                     <span>1 / 7</span>
                     <div class="slice">
@@ -10,18 +16,7 @@
                         <div class="fill"></div>
                     </div>
                 </div>
-                <span style="margin-left: 30px; color: #607D8B;">InvestQuestions</span>
-            </div>
-            <div class="col-md-6">
-                <div class="c100 small p20 orange pull-right">
-                    <span>20</span>
-                    <div class="slice">
-                        <div class="bar"></div>
-                        <div class="fill"></div>
-                    </div>
-                </div>
-                <span style="margin-left: 50px; color: #607D8B;">InvestCoins</span>
-            </div>
-        </div>
+            </div>                        
+        </div>        
     </div>
 </template>
