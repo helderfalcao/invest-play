@@ -25,8 +25,9 @@ body {
   color: #78909C;
 }
 
-.item .avatar-type {
-  background: #FFF;
+.item .avatar-type img {  
+  width: 100px;
+  margin-top: 30px; 
 }
 
 .link {
@@ -87,7 +88,8 @@ body {
 }
 
 .login {
-  height: 550px ;  
+  height: auto ;
+  display: table;  
   font-family: 'Roboto Condensed', sans-serif;  
 }
 
@@ -304,6 +306,24 @@ div.au-stagger {
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
   border-radius: 100px !important;
+}
+
+.item-resposta {
+  background: #666666;
+  color: #fff;
+  padding: 0px 10px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+.item-resposta:hover {
+  background: #6ab344;
+}
+.item-resposta::selection {
+  background: #6ab344;
+}
+.item-resposta label {  
+  display: block;
+  padding: 20px 10px;
 }
 
 
@@ -560,7 +580,7 @@ div.au-stagger {
   font-size: 240px;
 }
 .c100.small {
-  font-size: 80px;
+  font-size: 100px;
 }
 .c100 > span {
   position: absolute;
