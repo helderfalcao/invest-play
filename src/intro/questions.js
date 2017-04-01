@@ -39,13 +39,22 @@ export class questions {
     continuar() {
         console.log(this.resposta);
         var opcao = this.getResposta(this.resposta);
-        this.salvarResposta(opcao);
-        if (opcao.proxima_pergunta != 'string' || opcao.proxima_pergunta != '') {
-            this.router.navigate("question/" + opcao.proxima_pergunta);
+        var resposta = {
+            "perguntaId": this.pergunta._id,
+            "opcaoEscolhida": this._id
         }
+        if (opcao.proxima_pergunta != 'string' && opcao.proxima_pergunta != '') {
+            this.router.navigate("question/" + opcao.proxima_pergunta);
+            this.userInfo.resposta1 = this.resposta;
+        } else {
+            this.userInfo.resposta2 = this.resposta;
+            var perfil = this.userInfo.calcularPerfil();
+            this.router.navigate("resultado/" + perfil);
+        }
+        this.salvarResposta(opcao);
     }
 
-    salvarResposta(opcao) {
+    salvarResposta(opcao, isResposta1) {
         var This = this;
         this.userInfo.authUser(function (user) {
             var resposta = {
@@ -58,7 +67,7 @@ export class questions {
                 .then(response => response.json())
                 .then(data => {
                     console.log(data);
-                    This.pergunta = data;
+                    This.resposta = data;
                 }).catch(function (error) {
                     console.log(error);
                 });
