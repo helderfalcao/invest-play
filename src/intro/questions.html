@@ -1,42 +1,14 @@
 <template>
     <div class="jumbotron login">        
-        <form>
+        <form if.bind="pergunta">
             <h3 class="title">
-                Suponhamos que você recebeu um PL (participação nos lucros) da empresa 
-                onde trabalha no valor de R$ 10 mil. O que você faria com esse dinheiro?
+                ${pergunta.name}
             </h3>                
-            <div class="radio item-resposta">
+            <div class="radio item-resposta" repeat.for="opcao of pergunta.opcoes">
                 <label>
                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-                    Eu colocaria na poupança.
+                    ${opcao.descricao}
                 </label>
-            </div>
-            <div class="radio item-resposta">
-                <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-                    Eu colocaria no Tesouro Direto.
-                </label>
-            </div>
-            <div class="radio item-resposta">
-                <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                    Eu colocaria em títulos de capitalização no meu banco.
-                </label>
-            </div>
-            <div class="radio item-resposta">
-                <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                    Eu colocaria em fundos de investimentos.
-                </label>
-            </div>
-            <div class="radio item-resposta">
-                <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios4" value="option5">
-                    Eu deixaria na minha conta corrente do banco.
-                </label>
-            </div>                                           
-            <div class="col-md-4 pull-right">
-                <button class="btn btn-lg btn-success auth-button">Continuar</button>
             </div>
         </form>                
     </div>
