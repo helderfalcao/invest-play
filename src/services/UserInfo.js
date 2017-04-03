@@ -13,6 +13,7 @@ export class UserInfo {
     objetivo;
     resposta1;
     resposta2;
+    perfil;
 
     constructor(http) {
         this.http = http;
@@ -57,13 +58,14 @@ export class UserInfo {
         var r1 = this.resposta1;
         var r2 = this.resposta2;
         if (r1 == 'C' && r2 == 'A') {
-            return this.PERFIL_ARROJADO;
+            this.perfil = this.PERFIL_ARROJADO;
         } else if ((r1 == 'C' && r2 == 'B')
             || (r1 == 'D' && r2 == 'A')
             || (r1 == 'D' && r2 == 'B')) {
-            return this.PERFIL_MODERADO;
+            this.perfil = this.PERFIL_MODERADO;
         } else {
-            return this.PERFIL_CONSERVADOR
+            this.perfil = this.PERFIL_CONSERVADOR
         }
+        return this.perfil;
     }
 }
