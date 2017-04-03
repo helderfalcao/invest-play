@@ -9,6 +9,8 @@ export class App {
   constructor(userInfo) {
     this.userInfo = userInfo;
     this.perfil = "Meu Perfil";
+    this.progress = 0;
+    this.counter = 0;
   }
 
   configureRouter(config, router) {
@@ -27,7 +29,9 @@ export class App {
       { route: 'info5v3', name: 'info5v3', moduleId: 'info/info_5v3', title: 'Investplay Info' },
       { route: 'info5v4', name: 'info5v4', moduleId: 'info/info_5v4', title: 'Investplay Info' },
       { route: 'info5v5', name: 'info5v5', moduleId: 'info/info_5v5', title: 'Investplay Info' },
-      { route: 'final', name: 'final', moduleId: 'intro/final', title: 'Investplay Info' }
+      { route: 'final', name: 'final', moduleId: 'intro/final', title: 'Investplay Info' },
+      { route: 'fechamento', name: 'fechamento', moduleId: 'intro/fechamento', title: 'Investplay fechamento' },
+      { route: 'agradecimento', name: 'agradecimento', moduleId: 'intro/agradecimento', title: 'Investplay agradecimento' }
     ]);
 
     this.router = router;
@@ -42,6 +46,11 @@ export class App {
 
   changeProfilePerfil(perfil){
     this.perfil = perfil;
+  }
+
+  updateProgress(counter, progress) {
+    this.progress = progress;
+    this.counter = counter;
   }
 
 }

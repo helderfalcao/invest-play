@@ -2,9 +2,10 @@ import { inject } from 'aurelia-framework';
 import { HttpClient } from 'aurelia-fetch-client';
 import { UserInfo } from '../services/UserInfo';
 import { Router } from 'aurelia-router';
+import { App } from 'app';
 import 'fetch';
 
-@inject(HttpClient, UserInfo, Router)
+@inject(HttpClient, UserInfo, Router, App)
 export class info_4 {
 
     comprarCarro = "58df3519377b0d2a417adea8";
@@ -13,14 +14,15 @@ export class info_4 {
     garantirAposentadoria = "58df3578377b0d2a417adeab";
     outroSonho = "58df358b377b0d2a417adeac";
 
-    constructor(http, userInfo, router) {
+    constructor(http, userInfo, router, app) {
         this.http = http;
         this.userInfo = userInfo;
         this.router = router;
+        this.app = app;
     }
 
     activate() {
-
+        this.app.updateProgress(4, 80);
     }
 
     continuar() {
@@ -42,5 +44,6 @@ export class info_4 {
                 this.router.navigate("info5v5");
                 break;
         }
+        this.app.updateProgress(5, 100);
     }
 }
