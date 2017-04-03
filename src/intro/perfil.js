@@ -6,13 +6,17 @@ import 'fetch';
 
 @inject(HttpClient)
 export class Perfil {
-    title = "Meu InvestPlayer";
-
+    
     constructor(http) {
         this.http = http;
     }
 
     activate() {
 
+    }
+
+    updatePerfil(perfil) {
+        this.perfil = perfil;
+        console.log(this.perfil);
     }
 }

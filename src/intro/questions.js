@@ -2,20 +2,22 @@ import { inject } from 'aurelia-framework';
 import { HttpService } from '../services/HttpService';
 import { ServiceUtils } from '../services/ServiceUtils';
 import { UserInfo } from '../services/UserInfo';
+import { App } from 'app';
 import { Router } from 'aurelia-router';
 import 'fetch';
 
-@inject(HttpService, ServiceUtils, UserInfo, Router)
+@inject(HttpService, ServiceUtils, UserInfo, Router, App)
 export class questions {
 
     pergunta;
     resposta;
 
-    constructor(http, utils, userInfo, router) {
+    constructor(http, utils, userInfo, router, app) {
         this.http = http;
         this.utils = utils;
         this.userInfo = userInfo;
         this.router = router;
+        this.app = app;
     }
 
     activate(params) {
@@ -43,13 +45,14 @@ export class questions {
             "perguntaId": this.pergunta._id,
             "opcaoEscolhida": this._id
         }
-        if (opcao.proxima_pergunta != 'string' && opcao.proxima_pergunta != '') {
+        if (opcao && (opcao.proxima_pergunta != 'string' && opcao.proxima_pergunta != '')) {
             this.router.navigate("question/" + opcao.proxima_pergunta);
             this.userInfo.resposta1 = this.resposta;
         } else {
             this.userInfo.resposta2 = this.resposta;
             var perfil = this.userInfo.calcularPerfil();
             this.router.navigate("resultado/" + perfil);
+            this.app.changeProfilePerfil(perfil);
         }
         this.salvarResposta(opcao);
     }
