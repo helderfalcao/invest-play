@@ -9,6 +9,8 @@ export class App {
   constructor(userInfo) {
     this.userInfo = userInfo;
     this.perfil = "Meu Perfil";
+    this.progress = 0;
+    this.counter = 0;
   }
 
   configureRouter(config, router) {
@@ -42,6 +44,11 @@ export class App {
 
   changeProfilePerfil(perfil){
     this.perfil = perfil;
+  }
+
+  updateProgress(counter, progress) {
+    this.progress = progress;
+    this.counter = counter;
   }
 
 }
