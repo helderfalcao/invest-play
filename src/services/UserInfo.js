@@ -54,6 +54,46 @@ export class UserInfo {
         });
     }
 
+    salvarInfoUserEscolhaInvestimento(investimento) {
+        var This = this;
+        this.authUser(function (user) {
+            var userInfo = {
+                "idUsuario": user._id,
+                "escolhaInvestimento": investimento
+            };
+            let request = 'usuarioinfo';
+            return This.http.POST(request, userInfo)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                }).catch(function (error) {
+                    console.log(error);
+                });
+        });
+    }
+
+    salvarInfoUserFeedback(nome, email, feed) {
+        var This = this;
+        this.authUser(function (user) {
+            var userInfo = {
+                "idUsuario": user._id,
+                "info": {
+                    "nome": nome,
+                    "email": email,
+                    "feed": feed
+                }
+            };
+            let request = 'usuarioinfo';
+            return This.http.POST(request, userInfo)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                }).catch(function (error) {
+                    console.log(error);
+                });
+        });
+    }
+
     calcularPerfil() {
         var r1 = this.resposta1;
         var r2 = this.resposta2;
