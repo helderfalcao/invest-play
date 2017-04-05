@@ -4,7 +4,7 @@ import 'fetch';
 
 @inject(HttpClient)
 export class Contatos {
-    title = 'Siga a investplay';
+    title = 'Apoiadores';
     
     constructor(http) {
         this.http = http;
