@@ -1,0 +1,26 @@
+<template>
+    <div class="jumbotron login">
+        <form>
+            <h4 class="title resultado-help">
+                Vamos alcançar rentabilidade maiores através de melhores investimentos.
+                <br>
+                <br>
+                Nossa equipe entrará em contato com você para que possamos te ajudar.
+            </h4>
+            <br>
+            <h4 class="title resultado-help">
+                Por favor deixe seus contatos abaixo:
+            </h4>             
+            <div class="form-group">
+                <input value.bind="nome" type="text" class="form-control input-lg" placeholder="Seu e-mail">
+                <br>
+                <input value.bind="email" type="text" class="form-control input-lg" placeholder="Telefone">
+                <br>                
+            </div>
+            <br>            
+            <div>
+                <button click.delegate="continuar()" class="btn btn-lg btn-success auth-button">Enviar contato</button>
+            </div>
+        </form>
+    </div>
+</template>
