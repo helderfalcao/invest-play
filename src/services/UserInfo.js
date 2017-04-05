@@ -5,7 +5,6 @@ import 'fetch';
 @inject(HttpService)
 export class UserInfo {
 
-    PERFIL_ARROJADO = 'ARROJADO';
     PERFIL_MODERADO = 'MODERADO';
     PERFIL_CONSERVADOR = 'CONSERVADOR';
 
@@ -97,11 +96,8 @@ export class UserInfo {
     calcularPerfil() {
         var r1 = this.resposta1;
         var r2 = this.resposta2;
-        if (r1 == 'C' && r2 == 'A') {
-            this.perfil = this.PERFIL_ARROJADO;
-        } else if ((r1 == 'C' && r2 == 'B')
-            || (r1 == 'D' && r2 == 'A')
-            || (r1 == 'D' && r2 == 'B')) {
+        if ((r1 == 'C' && r2 == 'B')
+            || (r1 == 'C' && r2 == 'A')) {
             this.perfil = this.PERFIL_MODERADO;
         } else {
             this.perfil = this.PERFIL_CONSERVADOR
