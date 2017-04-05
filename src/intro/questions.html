@@ -4,7 +4,7 @@
             <h3 class="title">
                 ${pergunta.name}
             </h3>
-            <div class="radio item-resposta" repeat.for="opcao of pergunta.opcoes">
+            <div class="radio item-resposta ${$parent.resposta == opcao.opcao ? 'selected' : ''}" repeat.for="opcao of pergunta.opcoes">
                 <label>
                     <input type="radio" name="optionsRadios" value.bind="opcao.opcao" checked.bind="$parent.resposta">
                     ${opcao.descricao}
