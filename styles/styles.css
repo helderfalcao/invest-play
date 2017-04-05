@@ -312,8 +312,8 @@ div.au-stagger {
 }
 
 .img_logo {
-  width: 190px;
-  margin-top: -10px;  
+  width: 250px;
+  margin-top: 0px;  
   margin-left: 100px;
 }
 
@@ -456,9 +456,9 @@ div.au-stagger {
     height: 50px;  
   }
   .img_logo {
-    width: 120px;
-    margin-top: -12 px;  
-    margin-left: 100px;
+    width: 230px;
+    margin-top: -8px;  
+    margin-left: 30px;
   }
   .item .description {
     display: none;
