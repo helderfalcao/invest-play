@@ -37,6 +37,11 @@ body {
   color: #6ab344;
 }
 
+.item_contatos img {
+  position: relative;
+  width: 100%;
+}
+
 .auth-button-container {
   margin-bottom: 20px;
   padding-right: 80px;
@@ -307,8 +312,8 @@ div.au-stagger {
 }
 
 .img_logo {
-  width: 190px;
-  margin-top: -10px;  
+  width: 250px;
+  margin-top: 0px;  
   margin-left: 100px;
 }
 
@@ -368,6 +373,7 @@ div.au-stagger {
 }
 .resultado-help {
   margin: 10px 0px !important;
+  text-align: justify;
 }
 .resultado-image {
   position: relative;
@@ -412,6 +418,10 @@ div.au-stagger {
   margin-top: 10px;
   font-family: 'Roboto Condensed', sans-serif;
 }
+.destaque {
+  color: #6ab344;
+  text-decoration: none;
+}
 @media only screen and (max-width : 1200px) {
 }
 
@@ -424,9 +434,12 @@ div.au-stagger {
     margin-top: 0px; 
   }
   .medidor-invest {
-    margin-right: 300px;
-    margin-top: -30px; 
+     
   }	  
+  .item_contatos img {
+    position: relative;
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width : 768px) {
@@ -443,9 +456,9 @@ div.au-stagger {
     height: 50px;  
   }
   .img_logo {
-    width: 120px;
-    margin-top: -12 px;  
-    margin-left: 100px;
+    width: 230px;
+    margin-top: -8px;  
+    margin-left: 30px;
   }
   .item .description {
     display: none;
@@ -458,6 +471,10 @@ div.au-stagger {
     margin-right: 80px;
     margin-top: 20px; 
   }	 
+  .item_contatos img {
+    position: relative;
+    width: 250px;
+  }
 }
 /***********************************
 ******* CSS PROGRESS ******
