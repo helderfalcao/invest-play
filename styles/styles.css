@@ -50,11 +50,12 @@ body {
 
 .auth-button {
   width: 100%;
+  margin-top: 5px;
 }
 
 .container .jumbotron.login {
   padding: 30px;
-  min-height: 775px ;
+  min-height: 850px ;
   background: #FFF;
   box-shadow: 0 0 25px rgba(0,0,0,0.04);
   border-radius: 10px;
@@ -399,10 +400,10 @@ div.au-stagger {
   left: 50%;
 }
 .resultado-image-gra {
-  position: relative;
-  width: 400px;
+  position: relative;  
+  width: 350px;
   height: auto;
-  margin-left: -200px;
+  margin-left: -175px;
   left: 50%;
 }
 .marca {
@@ -432,10 +433,7 @@ div.au-stagger {
   .item .avatar-type img {  
     width: 100px;
     margin-top: 0px; 
-  }
-  .medidor-invest {
-     
-  }	  
+  }   
   .item_contatos img {
     position: relative;
     width: 300px;
@@ -456,7 +454,7 @@ div.au-stagger {
     height: 50px;  
   }
   .img_logo {
-    width: 230px;
+    width: 200px;
     margin-top: -8px;  
     margin-left: 30px;
   }
