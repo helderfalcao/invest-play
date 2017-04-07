@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>InvestPlay</title>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN4ZDWX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <meta name="description" content="InvestPlay é uma ferramenta gratuita de aprendizagem que ensina os usuários a como investir melhor o dinheiro, de uma maneira ainda não abordada, feito através de gamification.">
     <meta name="keywords" content="startup,investor,accelerator,jobs,venture capitals,incubators,entrepreneurs,angel investor,demo day,fundraising">
     <meta itemprop="name" content="InvestPlay">
@@ -27,7 +32,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-  <body aurelia-app="main" class="body_splash">
+  <body aurelia-app="main" class="body_splash">    
     <div class="splash">
       <div class="message">Carregando...</div>
       <i class="fa fa-spinner fa-spin"></i>
@@ -44,6 +49,25 @@
     <script src="jspm_packages/npm/bluebird@3.4.1/js/browser/bluebird.min.js"></script>
     <script>
       System.import('aurelia-bootstrapper');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WN4ZDWX');
+    </script>
+    <!-- End Google Tag Manager -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-96977997-1', 'auto');
+      ga('send', 'pageview');
+
     </script>
   </body>
 </html>
