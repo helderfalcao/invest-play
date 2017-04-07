@@ -2,17 +2,19 @@ import { inject } from 'aurelia-framework';
 import { HttpService } from '../services/HttpService';
 import { UserInfo } from '../services/UserInfo';
 import { Router } from 'aurelia-router';
+import { App } from 'app';
 import 'fetch';
 
-@inject(HttpService, UserInfo, Router)
+@inject(HttpService, UserInfo, Router, App)
 export class objetivo {
 
     objetivoSelecionado;
 
-    constructor(http, userInfo, router) {
+    constructor(http, userInfo, router, app) {
         this.http = http;
         this.userInfo = userInfo;
         this.router = router;
+        this.app = app;
         this.loadUserInfo();
         this.loadObjetivos();
     }
@@ -38,6 +40,7 @@ export class objetivo {
 
     continuar() {
         this.userInfo.objetivo = this.getObjeto(this.objetivoSelecionado);
+        this.app.objetivo = this.userInfo.objetivo.name;
         this.userInfo.salvarInfoUserObjetivo(this.objetivoSelecionado);
         this.router.navigate("question/" + "58df4248bf76c758b1cfb77d");
     }
