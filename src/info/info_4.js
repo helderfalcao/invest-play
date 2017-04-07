@@ -35,10 +35,10 @@ export class info_4 {
                 this.router.navigate("info5v2");
                 break;
             case this.fazerViagem:
-                this.router.navigate("info5v3");
+                this.router.navigate("info5v4");
                 break;
             case this.garantirAposentadoria:
-                this.router.navigate("info5v4");
+                this.router.navigate("info5v3");
                 break;
             case this.outroSonho:
                 this.router.navigate("info5v5");
