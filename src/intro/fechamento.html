@@ -1,15 +1,24 @@
 <template>
     <div class="jumbotron login">
         <form>
-            <h4 class="title col-md-10 col-md-offset-1">
-                O seu feedback para nós é muito importante para construirmos o melhor produto possível para te ajudar a conquistar seu sonho. Que tal falar um pouquinho sobre qual foi a sua experiência na nossa plataforma até agora? Lembrando que qualquer sugestão, crítica ou opinião é bem-vinda.
-            </h4>            
+            <h4 class="title col-md-12">
+                Deixe seus dados abaixo para que a nossa equipe possa entrar em contato para que possamos te ajudar.
+            </h4>
+            <h4 class="title col-md-12">
+                Estamos em uma versão beta, o seu feedback é muito importante para podermos te entregar a melhor 
+                experiência possível.
+            </h4>
+            <h4 class="title col-md-12">
+                Você poderia deixar seu feedback abaixo?
+            </h4>                
             <div class="form-group">
                 <input value.bind="nome" type="text" class="form-control input-lg" placeholder="Seu nome">
                 <br>
                 <input value.bind="email" type="text" class="form-control input-lg" placeholder="Seu e-mail">
                 <br>
-                <textarea value.bind="feedback" class="form-control" rows="3" placeholder="Mensagem"></textarea>
+                <textarea value.bind="feedback" class="form-control" rows="5" 
+                class="form-control input-lg" placeholder="Mensagem">
+                </textarea>
             </div>
             <br>
             <br>

@@ -5,7 +5,7 @@ import { UserInfo } from '../services/UserInfo';
 import 'fetch';
 
 @inject(HttpClient, Router, UserInfo)
-export class Fechamento {    
+export class Fechamento_1 {    
     
     constructor(http, router, userInfo) {
         this.http = http;

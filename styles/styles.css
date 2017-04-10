@@ -7,14 +7,14 @@ body {
 
 
 .login .title {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   text-align: center;
   color: #455A64;
   font-family: 'Roboto Condensed', sans-serif;  
 }
 
 .item .title {
-  margin-bottom: 10px;
+  margin-bottom: 10px;  
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;  
 }
