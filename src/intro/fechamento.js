@@ -5,8 +5,8 @@ import { UserInfo } from '../services/UserInfo';
 import 'fetch';
 
 @inject(HttpClient, Router, UserInfo)
-export class Fechamento {    
-    
+export class Fechamento {
+
     constructor(http, router, userInfo) {
         this.http = http;
         this.router = router;
@@ -17,7 +17,7 @@ export class Fechamento {
 
     }
 
-    continuar() {
+    submit() {
         this.userInfo.salvarInfoUserFeedback(this.nome, this.email, this.feedback);
         this.router.navigate("agradecimento");
     }

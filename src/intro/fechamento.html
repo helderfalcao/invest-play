@@ -1,6 +1,6 @@
 <template>
     <div class="jumbotron login">
-        <form>
+        <form submit.delegate = "submit()">
             <h4 class="title col-md-12">
                 Deixe seus dados abaixo para que a nossa equipe possa entrar em contato para que possamos te ajudar.
             </h4>
@@ -12,9 +12,9 @@
                 Você poderia deixar seu feedback abaixo?
             </h4>                
             <div class="form-group">
-                <input value.bind="nome" type="text" class="form-control input-lg" placeholder="Seu nome (*obrigatório)">
+                <input value.bind="nome" required="true" type="text" class="form-control input-lg" placeholder="Seu nome (*obrigatório)">
                 <br>
-                <input value.bind="email" type="text" class="form-control input-lg" placeholder="Seu e-mail (*obrigatório)">
+                <input value.bind="email" required="true" type="email" class="form-control input-lg" placeholder="Seu e-mail (*obrigatório)">
                 <br>
                 <textarea value.bind="feedback" class="form-control" rows="5" 
                 class="form-control input-lg" placeholder="Mensagem">
@@ -23,7 +23,7 @@
             <br>
             <br>
             <div>
-                <button click.delegate="continuar()" class="btn btn-lg btn-success auth-button">Enviar contato</button>
+                <button type="submit" class="btn btn-lg btn-success auth-button">Enviar contato</button>
             </div>
         </form>
     </div>
