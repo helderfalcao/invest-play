@@ -2,19 +2,20 @@
     <div class="jumbotron login">
         <form submit.delegate = "submit()">
             <h4 class="title col-md-12">
-                Deixe seus dados abaixo para que a nossa equipe possa entrar em contato para que possamos te ajudar.
+                Ótima escolha!
             </h4>
             <h4 class="title col-md-12">
-                Estamos em uma versão beta, o seu feedback é muito importante para podermos te entregar a melhor 
-                experiência possível.
+                Preencha seus dados que entraremos em contato.
             </h4>
             <h4 class="title col-md-12">
-                Você poderia deixar seu feedback abaixo?
+                Estamos em uma versão beta, o seu feedback é muito importante 
+                para podermos te entregar a melhor experiência possível. 
+                Deixe uma mensagem de feedback abaixo.
             </h4>                
             <div class="form-group">
-                <input value.bind="nome" required="true" type="text" class="form-control input-lg" placeholder="Seu nome (*obrigatório)">
+                <input value.bind="email" required="true" type="email" class="form-control input-lg" placeholder="Seu e-mail (*obrigatório)"/>                
                 <br>
-                <input value.bind="email" required="true" type="email" class="form-control input-lg" placeholder="Seu e-mail (*obrigatório)">
+                <input value.bind="nome" type="tel" class="form-control input-lg" placeholder="Telefone"/>
                 <br>
                 <textarea value.bind="feedback" class="form-control" rows="5" 
                 class="form-control input-lg" placeholder="Mensagem">
