@@ -26,7 +26,6 @@ export class UserInfo {
             return this.http.GET(request)
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data);
                     this.user = data;
                     userCallback(this.user);
                 }).catch(function (error) {
@@ -46,7 +45,7 @@ export class UserInfo {
             return This.http.POST(request, userInfo)
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data);
+                    
                 }).catch(function (error) {
                     console.log(error);
                 });
@@ -64,7 +63,7 @@ export class UserInfo {
             return This.http.POST(request, userInfo)
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data);
+                    
                 }).catch(function (error) {
                     console.log(error);
                 });
@@ -86,7 +85,7 @@ export class UserInfo {
             return This.http.POST(request, userInfo)
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data);
+                    
                 }).catch(function (error) {
                     console.log(error);
                 });
