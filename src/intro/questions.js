@@ -39,7 +39,7 @@ export class questions {
     }
 
     continuar() {
-        $('#continuarButton').attr('disabled');
+        $('#continuarButton').attr('disabled','');
         console.log(this.resposta);
         var opcao = this.getResposta(this.resposta);
         var resposta = {
