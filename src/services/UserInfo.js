@@ -70,7 +70,7 @@ export class UserInfo {
         });
     }
 
-    salvarInfoUserFeedback(nome, email, feed) {
+    salvarInfoUserFeedback(nome, email, feed, phone) {
         var This = this;
         this.authUser(function (user) {
             var userInfo = {
@@ -78,7 +78,8 @@ export class UserInfo {
                 "info": {
                     "nome": nome,
                     "email": email,
-                    "feed": feed
+                    "feed": feed,
+                    "phone" : phone
                 }
             };
             let request = 'usuarioinfo';
