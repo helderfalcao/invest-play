@@ -33,12 +33,6 @@ module.exports = {
       'bluebird', [
         '/js/browser/bluebird.min.js'
       ]
-    ],
-    [
-      // include jquery mask files
-      'jquery-mask-plugin', [
-        '/dist/jquery.mask.min.js'
-      ]
     ]
   ]
 };
