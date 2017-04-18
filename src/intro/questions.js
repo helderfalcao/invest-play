@@ -39,6 +39,7 @@ export class questions {
     }
 
     continuar() {
+        $('#continuarButton').attr('disabled','');
         console.log(this.resposta);
         var opcao = this.getResposta(this.resposta);
         var resposta = {
@@ -83,5 +84,10 @@ export class questions {
                 return op;
             }
         }
+    }
+
+    respostaListener() {
+        $('#continuarButton').removeAttr('disabled');
+        return true;
     }
 }    

@@ -6,12 +6,12 @@
             </h3>
             <div class="radio item-resposta ${$parent.resposta == opcao.opcao ? 'selected' : ''}" repeat.for="opcao of pergunta.opcoes">
                 <label>
-                    <input type="radio" name="optionsRadios" value.bind="opcao.opcao" checked.bind="$parent.resposta">
+                    <input type="radio" name="optionsRadios" value.bind="opcao.opcao" checked.bind="$parent.resposta" click.delegate="respostaListener()">
                     ${opcao.descricao}
                 </label>
             </div>
             <div class="col-md-4 pull-right">
-                <button click.delegate="continuar()" class="btn btn-lg btn-success auth-button">Continuar</button>
+                <button id="continuarButton" click.delegate="continuar()" class="btn btn-lg btn-success auth-button" disabled>Continuar</button>
             </div>
         </form>
     </div>
