@@ -1,46 +1,102 @@
-<template>
-  <require from="bootstrap/css/bootstrap.css"></require>
-  <require from="nav-bar.html"></require>
-  
-  <nav class="navbar navbar-fixed-top navbar_top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-          aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <img class="img_logo" src="./resources/images/logo.png" />
-        </a>
+<template>  
+  <div class="banner">
+  <div class="banner_bg">
+    <section class="setlr-head">
+      <div class="clouds"></div>
+      <header class="header">
+        <div class="container d-flex flex-column">
+          <div class="row">
+            <div class="logo col-sm-12 col-md-3 col-lg-2">
+              <a href="#"><img src="./resources/images/svg/logo-white.svg" alt="Setlr Logo"></a>
+            </div>
+            <!--<div class="menu-buttons col-sm-12 col-md-9 col-lg-10">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+              <a href="https://www.kickstarter.com/projects/2093244397/setlr-the-crowdsourced-translation-project">
+                <button class="btn become-btn" type="button">Become a Translator</button>
+              </a>
+            </div> -->
+          </div> 
+        </div> 
+        <div class="container herotxt d-flex flex-column">    
+          <div class="row">
+            <div class="texts">
+              <h2>Você sabe investir?</h2>
+              <p>Aprenda a investir sozinho e alcance seu sonho de forma simples. É fácil.</p>
+              <a href="#" class="get_start">
+                disponível em breve
+              </a>
+            </div>
+            <div class="notebook-container">
+              <img src="./resources/images/macbook.svg" alt='Laptop image'/>
+              <div class="video-container">
+                <img src="./resources/images/png/back.gif" style="width:76%; height:auto;"/>                
+              </div>
+            </div>
+          </div>
+        </div> 
+      </header>
+    </section> 
+    <section class="whatwedo">
+      <div class="container">
+        <h2>Como funciona?</h2>       
+        <div class="container">
+          <div class="row setlr-everybody">
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="texts-container">
+                  <div class="fa fa-long-arrow-right fa-2x hidden-md-down arrow-point"></div>
+                  <h3>Entre</h3>
+                  <p>Você nos informa qual é o seu objetivo financeiro.</p>
+                  <div class="fa fa-long-arrow-down fa-2x hidden-md-up arrow-point-down"></div>
+                </div>
+                <h5 class="big-numbers">01</h5>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="texts-container">
+                  <div class="fa fa-long-arrow-right fa-2x hidden-md-down arrow-point"></div>
+                  <h3>Descubra</h3>
+                  <p>Descubra que tipo de investidor você é.</p>
+                  <div class="fa fa-long-arrow-down fa-2x hidden-md-up arrow-point-down"></div>
+                </div>
+                <h5 class="big-numbers">02</h5>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="texts-container">
+                  <div class="fa fa-long-arrow-right fa-2x hidden-md-down arrow-point"></div>
+                  <h3>Aprenda</h3>
+                  <p>Aprenda sobre os investimentos que mais combinam com seu perfil e objetivo</p>
+                  <div class="fa fa-long-arrow-down fa-2x hidden-md-up arrow-point-down"></div>
+                </div>
+                <h5 class="big-numbers">03</h5>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="texts-container">
+                  <div class="fa fa-dot-circle-o fa-2x hidden-md-down arrow-point-down"></div>
+                  <h3>Invista</h3>
+                  <p>Comece a investir de verdade quando sentir que é a hora.</p>
+                  <div class="fa fa-long-arrow-down fa-2x hidden-md-up arrow-point-down"></div>
+                </div>
+                <h5 class="big-numbers">04</h5>
+              </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li if.bind="!user"><img src="./resources/images/avatar.png" alt="..." class="img-circle navbar_img_user"></li>
-          <li if.bind="user"><img src.bind="user.foto" alt="..." class="img-circle navbar_img_user"></li>
-          <li><a type="submit" href="#fechamento" class="navbar_btn_top ">Contato</a></li>
-        </ul>
+    <footer class="footer">  
+      <div class="setlrsocial">
+        <div class="container">
+          <div class="row">
+            <p class="col-sm-12 col-md-6 align-self-center">&copy; 2017 InvestPlay. All rights reserved.</p>
+            <div class="col-sm-12 col-md-6 social-container">
+              <ul class="social-network align-self-center">
+                  <li><a href="https://www.facebook.com/investplay/" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>                  
+                  <li><a href="https://www.linkedin.com/company/investplay" class="icoLinkedin" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
-
-  <div class="container">
-    <div class="row home">
-      <div class="col-md-6 col-md-offset-1">
-        <router-view></router-view>                        
-      </div>
-      <div class="col-md-4">
-        <compose view-model="./intro/perfil.js" view-model.ref="perfilVM"></compose>
-        <compose view-model="./intro/medidor.js"></compose>
-        <compose view-model="./intro/contatos.js"></compose>
-      </div>
-    </div>
+    </footer>
   </div>
+</div>
+  
 </template>
