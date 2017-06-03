@@ -8,6 +8,7 @@ const jspm = require('jspm');
 const paths = require('../paths');
 const bundles = require('../bundles.js');
 const resources = require('../export.js');
+var cachebust = require('gulp-cache-bust');
 
 function getBundles() {
   let bl = [];
@@ -71,6 +72,15 @@ gulp.task('export', function(callback) {
     'export-normalized-resources',
     'export-copy',
     'export-resources',
+    'cacheBuster',
     callback
   );
+});
+
+gulp.task('cacheBuster', function () {
+    return gulp.src('./export/index.html')
+        .pipe(cachebust({
+        type: 'timestamp'
+    }))
+        .pipe(gulp.dest('./export'));
 });
