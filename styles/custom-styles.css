@@ -72,11 +72,14 @@ a:link,a:visited,a:hover,a:active {
 }
 
 .splash {  
-  background: #6ab344;
+  background: url("../resources/images/svg/stars.svg") repeat, #4CAF50;
+  background-size: 15rem 15rem;
+  background-position: center 0;
   height: 1200px;
   margin-top: -100px;
   text-align: center;  
   box-sizing: border-box;
+  padding: 300px 0;  
 }
 
 .splash .message {
