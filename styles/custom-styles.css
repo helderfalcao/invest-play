@@ -235,7 +235,7 @@ ul.list-unstyled li {
 .setlr-head {
     height: auto;
     width: 100%;
-    background: url("../resources/images/svg/stars.svg") repeat, #00c8aa;
+    background: url("../resources/images/svg/stars.svg") repeat, #4CAF50;
     background-size: 15rem 15rem;
     background-position: center 0;
     color: #fafafa;
@@ -307,11 +307,11 @@ header .header-img img {
     font-weight: 700;
 }
 
-a.get_start {
+.get_start {
     margin: 3rem 0;
     outline: none;
     padding: 1em 2em;
-    background: #00c8aa;
+    background: #4CAF50;
     font-weight: 500;
     color: #fafafa;
     font-size: 110%;
@@ -320,17 +320,19 @@ a.get_start {
     border-radius: 90px;
     text-decoration: none;
     border: solid 12px #FFF;
+    cursor: default;
+    
 }
 
-a.get_start:focus {
+.get_start:focus {
     outline: none;
 }
 
-a.get_start:hover {
+.get_start:hover {
     text-decoration: none;
     color: #FFF;
     font-weight: 500;
-    background-color: #6ab344;
+    background-color: #4CAF50   ;
     transition: all 0.25s ease-in-out;
 }
 
@@ -572,7 +574,7 @@ section.pricing {
 .whatwedo .setlr-everybody h3 {
     font-size: 150%;
     margin-bottom: 1rem;
-    color: #00c8aa;
+    color: #4CAF50;
 }
 
 .whatwedo .setlr-everybody .texts-container {
@@ -631,8 +633,8 @@ section.appstore {
     margin-bottom: 2rem;
 }
 
-.app-img img {
-    width: 60%;
+.app-img figure img {
+    width: 70%;
 }
 
 .apptxt {
@@ -723,7 +725,7 @@ section.appstore {
     margin: 2rem 0;
     outline: none;
     padding: 1em 2em;
-    background: #00c8aa;
+    background: #4CAF50;
     font-weight: 500;
     color: #fafafa;
     font-size: 100%;
@@ -731,7 +733,7 @@ section.appstore {
     letter-spacing: 1px;
     border-radius: 90px;
     text-decoration: none;
-    border: solid 12px #bff1ea;
+    border: solid 12px #C8E6C9;
     line-height: 1.3;
 }
 
@@ -742,9 +744,9 @@ input.subscribe-form-text {
 
 .app-kicks .get_start:hover {
     font-weight: 500;
-    background-color: #3acfef;
+    background-color: #388E3C;
     transition: all 0.25s ease-in-out;
-    border: solid 12px #cef3fb;
+    border: solid 12px #C8E6C9;
 }
 
 .app-kicks input.subscribe-form-text {
@@ -1807,7 +1809,7 @@ footer.footer.no-menu {
 }
 
 footer.footer {
-    background: transparent;
+    background: #fafafa;
     padding-top: 5rem;
     margin-bottom: -150px;    
 }
@@ -1858,7 +1860,7 @@ footer.footer {
 }
 
 .footer .setlrsocial {
-    background: #00c8aa;
+    background: #4CAF50;
     text-align: center;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -2487,7 +2489,7 @@ footer.footer {
 
 .arrow-point {
     display: block;
-    color: #00c8aa;
+    color: #4CAF50;
     text-align: left;
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
@@ -2536,4 +2538,16 @@ footer.footer {
     60% {
         transform: translateY(-5px);
     }
+}
+
+.telas {
+    width: 200px;    
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(80%);
+    transition: 10000ms;
+}
+.telas:hover {
+     filter: grayscale(0%);
+     transition: 400ms
+}
 }
