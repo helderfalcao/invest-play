@@ -574,7 +574,7 @@ section.pricing {
     line-height: 1.9;
 }
 
-.whatwedo .setlr-everybody h3 {
+.whatwedo .setlr-everybody  h3 {
     font-size: 150%;
     margin-bottom: 1rem;
     color: #4CAF50;
@@ -595,6 +595,10 @@ section.pricing {
     line-height: 0;
     padding: 0;
     z-index: 0;
+}
+
+.texts-container h3 {
+    color: #4CAF50;
 }
 
 .clientcol {
@@ -2521,7 +2525,7 @@ footer.footer {
 
 .arrow-point-down {
     display: block;
-    color: #00c8aa;
+    color: #4CAF50  ;
     -moz-animation: bounce2 2s infinite;
     -webkit-animation: bounce2 2s infinite;
     animation: bounce2 2s infinite;
