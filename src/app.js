@@ -63,4 +63,15 @@ export class App {
     });;
   }
 
+  showSuccess() {
+    // Get the snackbar DIV
+    var successMessage = document.getElementById("emailSuccess")
+    var messageEmail = document.getElementById("inputEmail")
+
+    // Show message
+    successMessage.className = successMessage.className.replace("email-saved-before", "")
+    // Disable input
+    $(messageEmail).attr('disabled', 'disabled');
+
+  }
 }
