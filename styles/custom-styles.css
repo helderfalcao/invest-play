@@ -2560,7 +2560,7 @@ footer.footer {
 
 .title {
     color: #4CAF50;
-    font-family: 'Gloria Hallelujah', cursive;
+    /*font-family: 'Gloria Hallelujah', cursive;*/
 }
 
 .form_contact{
@@ -2571,7 +2571,7 @@ footer.footer {
 .form_contact h3 {
     text-align: center;
     color: #4CAF50;
-    font-family: 'Gloria Hallelujah', cursive;
+    /*font-family: 'Gloria Hallelujah', cursive;*/
     padding-bottom: 40px;
 }
 
