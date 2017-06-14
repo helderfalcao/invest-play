@@ -67,9 +67,12 @@ export class App {
     // Get the snackbar DIV
     var successMessage = document.getElementById("emailSuccess")
     var messageEmail = document.getElementById("inputEmail")
+    var messageNotEmail = document.getElementById("mensagemNotificacaoEmail");
 
     // Show message
-    successMessage.className = successMessage.className.replace("email-saved-before", "")
+    successMessage.className = successMessage.className.replace("input-hidden", "")
+    successMessage.className = successMessage.className.replace("input-hidden", "")
+    messageNotEmail.className = messageNotEmail.className + " input-hidden";
     // Disable input
     $(messageEmail).attr('disabled', 'disabled');
 
