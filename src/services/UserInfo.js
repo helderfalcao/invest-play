@@ -45,7 +45,7 @@ export class UserInfo {
             return This.http.POST(request, userInfo)
                 .then(response => response.json())
                 .then(data => {
-                    
+
                 }).catch(function (error) {
                     console.log(error);
                 });
@@ -63,7 +63,7 @@ export class UserInfo {
             return This.http.POST(request, userInfo)
                 .then(response => response.json())
                 .then(data => {
-                    
+
                 }).catch(function (error) {
                     console.log(error);
                 });
@@ -79,18 +79,31 @@ export class UserInfo {
                     "nome": nome,
                     "email": email,
                     "feed": feed,
-                    "phone" : phone
+                    "phone": phone
                 }
             };
             let request = 'usuarioinfo';
             return This.http.POST(request, userInfo)
                 .then(response => response.json())
                 .then(data => {
-                    
+
                 }).catch(function (error) {
                     console.log(error);
                 });
         });
+    }
+
+    salvarEmail(email) {
+        var This = this;
+        var userInfo = {
+            "info": {
+                "email": email,
+            }
+        };
+        let request = 'usuarioSimple';
+        return This.http.POST(request, userInfo)
+            .then(response => response.json());
+            
     }
 
     calcularPerfil() {

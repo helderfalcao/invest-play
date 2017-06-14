@@ -11,6 +11,7 @@ export class App {
     this.perfil = "Meu Perfil";
     this.progress = 0;
     this.counter = 0;
+    this.email;
   }
 
   configureRouter(config, router) {
@@ -44,13 +45,22 @@ export class App {
     });
   }
 
-  changeProfilePerfil(perfil){
+  changeProfilePerfil(perfil) {
     this.perfil = perfil;
   }
 
   updateProgress(counter, progress) {
     this.progress = progress;
     this.counter = counter;
+  }
+
+  salvarEmailUsuario() {
+    var This = this;
+    this.userInfo.salvarEmail(this.email).then(data => {
+      This.showSuccess();
+    }).catch(function (error) {
+      console.log(error);
+    });;
   }
 
 }
