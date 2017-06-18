@@ -1816,7 +1816,7 @@ footer.footer.no-menu {
 }
 
 footer.footer {
-    background:     #fff;
+    background: #fafafa;
     padding-top: 5rem;
     margin-bottom: -150px;    
 }
@@ -2579,7 +2579,7 @@ footer.footer {
     position: relative;    
     width: 600px;
     margin-left: 50%;
-    left: -300px;
+    left: -220px;
 }
 
 .inp {
@@ -2604,4 +2604,7 @@ footer.footer {
         margin-left: 50%;
         left: -150px;
     }   
+    .form_contact h3 {
+        font-size: 25px;
+    }
 }
