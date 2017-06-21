@@ -319,11 +319,11 @@ header .header-img img {
     color: #fafafa;
     font-size: 110%;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing:-1px;
     border-radius: 90px;
     text-decoration: none;
     border: solid 12px #FFF;
-    cursor: default;
+    cursor: pointer;    
     
 }
 
@@ -335,7 +335,8 @@ header .header-img img {
     text-decoration: none;
     color: #FFF;
     font-weight: 500;
-    background-color: #4CAF50   ;
+    border-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(46,125,50 ,1)   ;
     transition: all 0.25s ease-in-out;
 }
 
@@ -632,7 +633,7 @@ section.pricing {
 }
 
 section.appstore {
-    background: #fafafa;
+    background: #fff;
 }
 
 .app-img {
@@ -771,6 +772,10 @@ input.subscribe-form-text {
 
 .benefits {
     padding-top: 2rem;
+}
+
+.whatwedo {
+    background: #fafafa !important;
 }
 
 .whatwedo .benefits h3,
@@ -1816,7 +1821,7 @@ footer.footer.no-menu {
 }
 
 footer.footer {
-    background: #fafafa;
+    background: #fff;
     padding-top: 5rem;
     margin-bottom: -150px;    
 }
@@ -2567,11 +2572,18 @@ footer.footer {
     background: #fff;
     width: 100%;
     height: 300px;
+    padding-bottom: 560px;
+    background-image: url("../resources/images/persons.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;    
 }
 .form_contact h3 {
     text-align: center;
     color: #4CAF50;
     /*font-family: 'Gloria Hallelujah', cursive;*/
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 40px;
 }
 
@@ -2598,6 +2610,9 @@ footer.footer {
 
 
 @media screen and (max-width: 600px) {
+    .form_contact{  
+    background-size: 400%;
+}
     .form_center {
         position: relative;    
         width: 300px;
