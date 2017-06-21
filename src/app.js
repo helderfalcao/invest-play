@@ -64,17 +64,18 @@ export class App {
   }
 
   showSuccess() {
-    // Get the snackbar DIV
+    // Itens a serem exibidos/escondidos
     var successMessage = document.getElementById("emailSuccess")
-    var messageEmail = document.getElementById("inputEmail")
-    var messageNotEmail = document.getElementById("mensagemNotificacaoEmail");
+    var messageNotEmail = document.getElementById("mensagemNotificacaoEmail")
+    var registerForm = document.getElementById("registerForm")
 
     // Show message
-    successMessage.className = successMessage.className.replace("input-hidden", "")
-    successMessage.className = successMessage.className.replace("input-hidden", "")
-    messageNotEmail.className = messageNotEmail.className + " input-hidden";
-    // Disable input
-    $(messageEmail).attr('disabled', 'disabled');
+    this.showHideItens([successMessage, messageNotEmail, registerForm])
+  }
 
+  showHideItens(itens) {
+    itens.forEach(function (element) {
+      $(element).toggleClass("input-hidden");
+    }, this);
   }
 }
