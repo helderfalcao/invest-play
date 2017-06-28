@@ -4,7 +4,7 @@
   "description": "Projeto Landpage para investplay",
   "main": "dist/main.js",
   "scripts": {
-    "preinstall": "jspm install; gulp bundle;",
+    "preinstall": "jspm install;",
     "start": "node ./app.js",
     "test": "gulp test",
     "e2e": "gulp serve webdriver-standalone e2e"
@@ -87,9 +87,25 @@
       "font-awesome": "npm:font-awesome@4.6.3",
       "jquery": "npm:jquery@^2.2.4",
       "jquery-mask-plugin": "npm:jquery-mask-plugin@^1.14.10",
+      "materialize": "npm:materialize-css@^0.99.0",
       "materialize-css": "npm:materialize-css@^0.99.0",
       "text": "github:systemjs/plugin-text@^0.0.8"
     },
-    "devDependencies": {}
+    "devDependencies": {},
+    "overrides": {
+      "npm:materialize-css@0.99.0": {
+        "format": "global",
+        "main": "bin/materialize.js",
+        "shim": {
+          "bin/materialize": [
+            "jquery"
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "require-dir": "^0.3.2",
+    "run-sequence": "^1.2.2"
   }
 }

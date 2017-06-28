@@ -6,7 +6,6 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-
   map: {
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.1",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0",
@@ -27,6 +26,7 @@ System.config({
     "font-awesome": "npm:font-awesome@4.6.3",
     "jquery": "npm:jquery@2.2.4",
     "jquery-mask-plugin": "npm:jquery-mask-plugin@1.14.10",
+    "materialize": "npm:materialize-css@0.99.0",
     "materialize-css": "npm:materialize-css@0.99.0",
     "text": "github:systemjs/plugin-text@0.0.8",
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -193,8 +193,7 @@ System.config({
     },
     "npm:materialize-css@0.99.0": {
       "hammerjs": "npm:hammerjs@2.0.8",
-      "jquery": "npm:jquery@3.2.1",
-      "process": "github:jspm/nodelibs-process@0.1.2"
+      "jquery": "npm:jquery@3.2.1"
     },
     "npm:process@0.11.10": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
