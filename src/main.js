@@ -1,16 +1,20 @@
-import 'bootstrap';
+import 'materialize-css';
 
 export function configure(aurelia) {
-  aurelia.use
-    .standardConfiguration()
-    .developmentLogging();
+ // These variables are only here to be able to distinguish between the two
+ // installation options presented above.
+ // Of course you can use the correct name directly in the import below.
 
-  //Uncomment the line below to enable animation.
-  //aurelia.use.plugin('aurelia-animator-css');
-  //if the css animator is enabled, add swap-order="after" to all router-view elements
+ let materialize = 'materialize-css'; // ONLY when using the "npm" option above
 
-  //Anyone wanting to use HTMLImports to load views, will need to install the following plugin.
-  //aurelia.use.plugin('aurelia-html-import-template-loader')
+ return aurelia.loader.loadModule(materialize).then(() => {
+   aurelia.use
+     .standardConfiguration()
+     .developmentLogging()
+     // Install and configure the plugin
+     .plugin('aurelia-materialize-bridge', bridge => bridge.useAll() );
 
-  aurelia.start().then(() => aurelia.setRoot());
+   return aurelia.start().then(a => a.setRoot());
+ });
+ 
 }

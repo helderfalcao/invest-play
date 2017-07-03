@@ -1,5 +1,4 @@
 import { inject } from 'aurelia-framework';
-
 import 'fetch';
 
 export class App {

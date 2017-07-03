@@ -29,6 +29,8 @@ module.exports = {
         "aurelia-logging-console",
         "bootstrap",
         "bootstrap/css/bootstrap.css!text",
+        "materialize-css",
+        "materialize-css/dist/css/materialize.css!text",
         "fetch",
         "jquery",
         "jquery-mask-plugin"
