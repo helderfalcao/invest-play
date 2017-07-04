@@ -1,12 +1,15 @@
 import { inject } from 'aurelia-dependency-injection';
+import { Router } from 'aurelia-router';
 
+@inject(Router)
 export class Apresentacao {
 
-    constructor() {
+    constructor(router) {
+        this.router = router;
     }
 
     nextScreen() {
-        console.log('teste');
+        this.router.navigate('login');
     }
 
 }
