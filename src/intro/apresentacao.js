@@ -5,4 +5,8 @@ export class Apresentacao {
     constructor() {
     }
 
+    nextScreen() {
+        console.log('teste');
+    }
+
 }
