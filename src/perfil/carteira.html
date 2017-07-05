@@ -1,0 +1,26 @@
+<template>
+    <require from="range-value.html"></require>
+    <div class="container">
+        <div class="row center-align">
+            <h1>Minha Carteira</h1>
+        </div>
+
+        <div class="row center-align">
+            <h3>Seu perfil é</h3>
+        </div>
+        
+        <form action="#">
+            <range-value range.bind="investRange"></range-value>
+
+            <range-value range.bind="mesInvestRange"></range-value>
+
+            <range-value range.bind="riscoRange"></range-value>
+            <div class="row">
+                <div class="col s12 right-align">
+                    <button md-button="disabled.bind: disabled;" click.trigger="nextScreen()">Continuar</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</template>
