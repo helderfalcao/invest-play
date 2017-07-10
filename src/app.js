@@ -14,6 +14,7 @@ export class App {
       { route: 'investimento', name: 'investimento', moduleId: 'perfil/investimento', nav: true },
       { route: 'objetivo', name: 'objetivo', moduleId: 'perfil/objetivo', nav: true },
       { route: 'carteira', name: 'carteira', moduleId: 'perfil/carteira', nav: true },
+      { route: 'dashboard', name: 'dashboard', moduleId: 'dashboard/home', nav: true },
     ]);
 
     this.router = router;
