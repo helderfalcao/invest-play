@@ -11,3 +11,7 @@
   position: relative; 
   top:40px;
 }
+
+.progress {
+  height: 30px !important;
+}
