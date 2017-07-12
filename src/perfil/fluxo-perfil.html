@@ -2,17 +2,12 @@
     <require from="pergunta.html"></require>
     <div class="container">
         <form action="#">
-
             <pergunta pergunta.bind="pergunta"></pergunta>
-
             <div class="row">
                 <div class="col s12 right-align">
-                    <div class="row">
-                        <button md-button="disabled.bind: disabled;" click.trigger="nextScreen()">Continuar</button>
-                    </div>
+                    <button md-button="disabled.bind: disabled;" click.trigger="nextScreen()">Continuar</button>
                 </div>
             </div>
         </form>
-
     </div>
 </template>
