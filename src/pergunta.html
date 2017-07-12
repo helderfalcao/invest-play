@@ -1,0 +1,13 @@
+<template bindable="pergunta">
+    <div class="container">
+        <div class="row center-align">
+            <h2>${pergunta.objetivo}</h2>
+            <h4>${pergunta.titulo}</h4>
+            <template repeat.for="opcao of pergunta.opcoes">
+                <div class="row">
+                    <a class="waves-effect waves-light btn-large">${opcao.descricao}</a>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

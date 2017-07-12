@@ -12,7 +12,7 @@ export class App {
       { route: ['', 'apresentacao'], name: 'apresentacao', moduleId: 'intro/apresentacao', nav: true },
       { route: 'login', name: 'login', moduleId: 'intro/login', nav: true },
       { route: 'investimento', name: 'investimento', moduleId: 'perfil/investimento', nav: true },
-      { route: 'objetivo', name: 'objetivo', moduleId: 'perfil/objetivo', nav: true },
+      { route: 'fluxo-perfil', name: 'fluxo-perfil', moduleId: 'perfil/fluxo-perfil', nav: true },
       { route: 'carteira', name: 'carteira', moduleId: 'perfil/carteira', nav: true },
       { route: 'dashboard', name: 'dashboard', moduleId: 'dashboard/home', nav: true },
     ]);

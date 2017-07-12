@@ -15,7 +15,7 @@ export class Investimento {
     }
 
     nextScreen() {
-        this.router.navigate('objetivo');
+        this.router.navigate('fluxo-perfil');
     }
 
     createRange(label, min, max) {
