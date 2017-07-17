@@ -2,7 +2,17 @@
     <require from="pergunta.html"></require>
     <div class="container">
         <form action="#">
-            <pergunta pergunta.bind="pergunta"></pergunta>
+            <div class="container">
+                <div class="row center-align">
+                    <h2>${pergunta.objetivo}</h2>
+                    <h4>${pergunta.titulo}</h4>
+                    <template repeat.for="opcao of pergunta.opcoes">
+                        <div class="row">
+                            <a class="waves-effect waves-light btn-large" click.trigger="nextScreen(opcao)">${opcao.descricao}</a>
+                        </div>
+                    </template>
+                </div>
+            </div>
             <div class="row">
                 <div class="col s12 right-align">
                     <button md-button="disabled.bind: disabled;" click.trigger="nextScreen()">Continuar</button>

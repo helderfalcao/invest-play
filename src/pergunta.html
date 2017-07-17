@@ -5,7 +5,7 @@
             <h4>${pergunta.titulo}</h4>
             <template repeat.for="opcao of pergunta.opcoes">
                 <div class="row">
-                    <a class="waves-effect waves-light btn-large">${opcao.descricao}</a>
+                    <a class="waves-effect waves-light btn-large" click.trigger="pergunta.nextScreen(opcao)">${opcao.descricao}</a>
                 </div>
             </template>
         </div>

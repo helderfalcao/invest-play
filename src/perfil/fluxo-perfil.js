@@ -1,23 +1,40 @@
 import { inject } from 'aurelia-dependency-injection';
 import { Router } from 'aurelia-router';
+import { PerguntaService } from '../services/PerguntaService';
 
-@inject(Router)
+@inject(Router, PerguntaService)
 export class FluxoPerfil {
-    pergunta = {
-        "objetivo": "descrição objetivo",
-        "titulo": "Titulo da pergunta",
-        "opcoes": [
-            { "descricao": "pergunta 1" },
-            { "descricao": "pergunta 2" },
-            { "descricao": "pergunta 3" },
-            { "descricao": "pergunta 4" }]
-    }
-    constructor(router) {
+    pergunta;
+    constructor(router, perguntaService) {
         this.router = router;
+        this.perguntaService = perguntaService;
     }
 
-    nextScreen() {
-        this.router.navigate('carteira');
+    attached() {
+        var This = this;
+        this.perguntaService.buscarPrimeiraPergunta()
+            .then(response => response.json())
+            .then(data => {
+                This.pergunta = data;
+                This.pergunta.nextScreen = This.nextScreen;
+            }).catch(function (error) {
+                console.log(error);
+            });
+    }
+
+    nextScreen(opcao) {
+        if (opcao.proximaPerguntaId) {
+            var This = this;
+            this.perguntaService.proximaPergunta(opcao)
+                .then(response => response.json())
+                .then(data => {
+                    This.pergunta = data;
+                }).catch(function (error) {
+                    console.log(error);
+                });
+        } else {
+            this.router.navigate('carteira');
+        }
     }
 
 }
