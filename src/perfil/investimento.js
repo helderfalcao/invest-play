@@ -15,7 +15,9 @@ export class Investimento {
         this.min = 0;
         this.max = 5000;
     }
-
+    attached() {
+        this.buscarInvestimentoAtual();
+    }
     nextScreen() {
         this.router.navigate('fluxo-perfil');
     }
@@ -37,4 +39,17 @@ export class Investimento {
         )
     }
 
+    buscarInvestimentoAtual() {
+        var This = this;
+        this.investimentoService.buscarInvestimentoAtual()
+            .then(response => response.json())
+            .then(data => {
+                var investimento  = data[0];
+                This.investRange.value = investimento.valorInicial;
+                This.mesInvestRange.value = investimento.valorMensal;
+                This.tempoRange.value = investimento.tempoInvestimento;
+            }).catch(function (error) {
+                console.log(error);
+            });
+    }
 }

@@ -25,7 +25,11 @@ export class InvestimentoService {
             }).catch(function (error) {
                 console.log(error);
             });
+    }
 
+    buscarInvestimentoAtual() {
+        var request = "investimentoUsuario";
+        return this.http.GET(request);
     }
 
 }
