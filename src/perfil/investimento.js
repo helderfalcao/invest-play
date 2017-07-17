@@ -44,7 +44,7 @@ export class Investimento {
         this.investimentoService.buscarInvestimentoAtual()
             .then(response => response.json())
             .then(data => {
-                var investimento  = data[0];
+                var investimento = data[0];
                 This.investRange.value = investimento.valorInicial;
                 This.mesInvestRange.value = investimento.valorMensal;
                 This.tempoRange.value = investimento.tempoInvestimento;
