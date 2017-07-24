@@ -1,5 +1,5 @@
 .background {
-  background: #003399 !important; 
+  background: #00374b !important; 
   padding-top: 25px; 
 }
 
@@ -14,4 +14,31 @@
 
 .progress {
   height: 30px !important;
+}
+
+.facebook_color {
+  background-color: #3B5998 !important;
+}
+
+/* APRESENTAÇÃO */
+.canvas {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+.slider_presentation {
+  width: 100%;
+  height: calc(100% - 150px);
+}
+.space_enter_app {
+  background: transparent;
+  height: 150px;
+  padding-top: 40px;
+}
+.button_enter_app {
+  padding: 0px 20px !important;  
+  height: 40px !important;
+  max-height: 40px !important;
+  border-radius: 6px !important;
 }
