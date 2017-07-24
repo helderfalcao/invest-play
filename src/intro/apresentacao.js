@@ -9,7 +9,7 @@ export class Apresentacao {
     }
 
     nextScreen() {
-        this.router.navigate('login');
+        this.router.navigate('investimento');
     }
 
 }

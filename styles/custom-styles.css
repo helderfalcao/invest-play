@@ -42,7 +42,7 @@
   max-height: 40px !important;
   border-radius: 6px !important;
 }
-/* APRESENTAÇÃO */
+/* IVESTIMENTO */
 .investimento_canvas {
   background: transparent;
   width: 100%;
@@ -75,4 +75,31 @@
   height: 40px !important;
   max-height: 40px !important;
   border-radius: 6px !important;
+}
+/* QUESTÕES PERFIL */
+.perfil_canvas {
+  background: transparent;
+  width: 100%;
+  height: calc(100% - 0px);
+  position: fixed;
+  margin-top: 0px !important;  
+}
+.perfil_title h1 {
+  color: #4caf50;
+  font-size: 1.8em;  
+}
+.perfil_pergunta h2 {
+  color: #fff;
+  font-size: 1.5em;
+  padding-top: 50px; 
+  padding-bottom: 50px;
+}
+.button_opcao {
+  background: #fff !important;
+  color: #00374b !important;
+  border-radius: 20px !important;
+  margin-top: 20px !important;
+  max-width: 100%;
+  width: 100%;
+  white-space: normal !important;
 }

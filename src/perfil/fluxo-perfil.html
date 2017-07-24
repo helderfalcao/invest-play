@@ -1,23 +1,25 @@
 <template>
     <require from="pergunta.html"></require>
-    <div class="container">
+    <div class="perfil_canvas">
         <form action="#">
             <div class="container">
-                <div class="row center-align">
-                    <h2>${pergunta.objetivo}</h2>
-                    <h4>${pergunta.titulo}</h4>
-                    <template repeat.for="opcao of pergunta.opcoes">
-                        <div class="row">
-                            <a class="waves-effect waves-light btn-large" click.trigger="nextScreen(opcao)">${opcao.descricao}</a>
-                        </div>
-                    </template>
-                </div>
+                <div class="center-align perfil_title">
+                    <h1>${pergunta.objetivo}</h1>
+                </div> 
+                <div class="center-align perfil_pergunta">
+                    <h2>${pergunta.titulo}</h2>
+                </div>    
+                <div class="center-align">
+                    <template repeat.for="opcao of pergunta.opcoes">    
+                        <a class="waves-effect waves-light btn-large button_opcao" click.trigger="nextScreen(opcao)">${opcao.descricao}</a>                    
+                    </template>    
+                </div>                
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col s12 right-align">
                     <button md-button="disabled.bind: disabled;" click.trigger="nextScreen()">Continuar</button>
                 </div>
-            </div>
+            </div> -->
         </form>
     </div>
 </template>
