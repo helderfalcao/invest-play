@@ -8,9 +8,9 @@ export class Investimento {
     constructor(router, investimentoService) {
         this.investimentoService = investimentoService;
         this.router = router;
-        this.investRange = this.createRange("Valor Atual", 0, 5000);
-        this.mesInvestRange = this.createRange("Valor mensal", 0, 1000);
-        this.tempoRange = this.createRange("Tempo(escala de 0 a 10)", 0, 10);;
+        this.investRange = this.createRange("Investimento inicial", 0, 5000);
+        this.mesInvestRange = this.createRange("Investimento adicional mensal", 0, 1000);
+        this.tempoRange = this.createRange("Tempo de investimento", 0, 10);
         this.tempo = 0;
         this.min = 0;
         this.max = 5000;

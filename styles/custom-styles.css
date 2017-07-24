@@ -1,6 +1,5 @@
 .background {
-  background: #00374b !important; 
-  padding-top: 25px; 
+  background: #00374b !important;    
 }
 
 .presentation-container {
@@ -26,10 +25,11 @@
   width: 100%;
   height: 100%;
   position: fixed;
+  padding-top: 25px;
 }
 .slider_presentation {
   width: 100%;
-  height: calc(100% - 150px);
+  height: calc(100% - 150px);  
 }
 .space_enter_app {
   background: transparent;
@@ -37,6 +37,40 @@
   padding-top: 40px;
 }
 .button_enter_app {
+  padding: 0px 20px !important;  
+  height: 40px !important;
+  max-height: 40px !important;
+  border-radius: 6px !important;
+}
+/* APRESENTAÇÃO */
+.investimento_canvas {
+  background: transparent;
+  width: 100%;
+  height: calc(100% - 0px);
+  position: fixed;
+  margin-top: 0px !important;  
+}
+.investimento_title h1 {
+  color: #4caf50;
+  font-size: 1.8em;  
+}
+.investimento_text {
+  color: #fff;
+  font-size: 1.1em; 
+}
+.investimento_text_green {
+  color: #4caf50;
+  font-size: 1.2em;
+}
+.space_investimento_button {
+  background: transparent;
+  height: 60px;
+  position: fixed; 
+  width: 100%;
+  bottom: 0;
+  padding-top: 10px;
+}
+.button_investimento_app {
   padding: 0px 20px !important;  
   height: 40px !important;
   max-height: 40px !important;
