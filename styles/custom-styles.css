@@ -18,7 +18,11 @@
 .facebook_color {
   background-color: #3B5998 !important;
 }
-
+.loading_div i {
+  color: #fff;
+  font-size: 4em;
+  margin-top: 30%;
+}
 /* APRESENTAÇÃO */
 .canvas {
   background: transparent;
