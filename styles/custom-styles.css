@@ -103,3 +103,72 @@
   width: 100%;
   white-space: normal !important;
 }
+/* CARTEIRA */
+.carteira_canvas {
+  background: transparent;
+  width: 100%;
+  height: calc(100% - 0px);
+  position: fixed;
+  margin-top: 0px !important;  
+}
+.carteira_scroll {
+  background: transparent;
+  width: 100%;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.carteira_title h1 {
+  color: #fff;
+  font-size: 1.8em;    
+}
+.carteira_avatar_space {
+  background: #7eb7c8;
+  width: 100%;
+  height: 220px;  
+}
+.carteira_avatar {
+  background: transparent;
+  width: 100%;
+  height: auto;  
+}
+.text_perfil_avatar {
+  background: transparent;
+  width: 100%;
+}
+.text_perfil_avatar h2 {
+  font-size: 1.8em;
+  margin-top: 5px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.text_perfil_avatar p {
+  font-size: 1.3em;
+  margin-top: 10px;
+  color: #fff;  
+}
+.carteira_produtos {
+  background: transparent;    
+}
+.carteira_produtos span {
+  color: #fff;
+  padding-top: 10px !important;
+}
+.progress_row {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.space_carteira_button {
+  background: transparent;
+  height: 60px;
+  position: fixed; 
+  width: 100%;
+  bottom: 0;
+  padding-top: 10px;
+}
+.button_carteira_app {
+  padding: 0px 20px !important;  
+  height: 40px !important;
+  max-height: 40px !important;
+  border-radius: 6px !important;
+}
