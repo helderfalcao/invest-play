@@ -1,9 +1,38 @@
 <template>
-    <require from="range-value.html"></require>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="left">
+                <a class="btn-floating btn-large waves-effect waves-light yellow accent-3"></a>
+            </div>
+            <div class="center-align">
+                <a href="#" class="brand-logo">Logo</a>
+            </div>
+        </div>
+    </nav>
     <div class="container">
+        <h4 class="center-align">Módulo Básico</h4>
+        <div class="valign-wrapper container_produto_pai">
+            <div class="center-align container_filho_produto_pai">
+                <a class="produto btn-floating btn-large ${produtoPai.color}" repeat.for="produtoPai of produtosPai">${produtoPai.acronimo}</a>
+            </div>
+        </div>
+
+        <div class="pruduto_separator"></div>
+        <div class="row container_produto">
+            <div class="col s4 center-align" repeat.for="produto of produtos">
+                <a class="produto btn-floating btn-large ${produto.color}">${produto.acronimo}</a>
+                <div class="progress white">
+                    <div class="determinate" style="width: ${produto.liquidez}%"></div>
+                </div>
+                <div class="progress white">
+                    <div class="determinate red" style="width: ${produto.risco}%"></div>
+                </div>
+            </div>
+        </div>
+
         <div class="row center-align">
-            <h1>Dashboard</h1>
-            <h4>Seu perfil é</h4>
+            <a class="waves-effect waves-light btn green ">Investir Agora</a>
         </div>
     </div>
+
 </template>
