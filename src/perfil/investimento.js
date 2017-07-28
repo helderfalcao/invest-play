@@ -36,7 +36,13 @@ export class Investimento {
             this.investRange.value,
             this.mesInvestRange.value,
             this.tempoRange.value
-        )
+        ).then(response => response.json())
+            .then(data => {
+                console.log("sucesso");
+                this.router.navigate('fluxo-perfil');
+            }).catch(function (error) {
+                console.log(error);
+            });
     }
 
     buscarInvestimentoAtual() {

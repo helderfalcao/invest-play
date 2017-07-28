@@ -18,13 +18,7 @@ export class InvestimentoService {
             "tempoInvestimento": tempo
         }
         var request = "investimentos";
-        this.http.POST(request, investimento)
-            .then(response => response.json())
-            .then(data => {
-                console.log("sucesso");
-            }).catch(function (error) {
-                console.log(error);
-            });
+        return this.http.POST(request, investimento);
     }
 
     buscarInvestimentoAtual() {
