@@ -1,6 +1,6 @@
-import { inject } from 'aurelia-dependency-injection';
-import { Router } from 'aurelia-router';
-import { InvestimentoService } from '../services/InvestimentoService';
+import { inject } from 'aurelia-dependency-injection'
+import { Router } from 'aurelia-router'
+import { InvestimentoService } from '../services/InvestimentoService'
 
 @inject(Router, InvestimentoService)
 export class Investimento {

@@ -1,7 +1,8 @@
 import { inject } from 'aurelia-dependency-injection';
 import { Router } from 'aurelia-router';
+import { ProdutoService } from '../services/ProdutoService'
 
-@inject(Router)
+@inject(Router, ProdutoService)
 export class Dashboard {
 
     perfil = "Conservador"
@@ -9,22 +10,22 @@ export class Dashboard {
         {
             'acronimo': 'FGC',
             'nome': 'FGC',
-            'color': 'green'
+            'caracteristica': 'green'
         },
         {
             'acronimo': 'TRI',
             'nome': 'Tributação',
-            'color': 'light-blue'
+            'caracteristica': 'light-blue'
         },
         {
             'acronimo': '',
             'nome': 'Liquidez',
-            'color': 'blue'
+            'caracteristica': 'blue'
         },
         {
             'acronimo': '',
             'nome': 'Risco',
-            'color': 'red'
+            'caracteristica': 'red'
         }
 
     ]
@@ -32,42 +33,63 @@ export class Dashboard {
         {
             'acronimo': 'CDB',
             'nome': 'CDB',
-            'color': 'green',
+            'caracteristica': 'green',
             'risco': 20,
             'liquidez': 80
         },
         {
             'acronimo': 'LCI/LCA',
             'nome': 'LCI/LCA',
-            'color': 'light-blue',
+            'caracteristica': 'light-blue',
             'risco': 30,
             'liquidez': 50
         },
         {
             'acronimo': 'LC',
             'nome': 'LC',
-            'color': 'blue',
+            'caracteristica': 'blue',
             'risco': 30,
             'liquidez': 80
         },
         {
             'acronimo': 'FGC',
             'nome': 'Fundo Investimento',
-            'color': 'red',
+            'caracteristica': 'red',
             'risco': 20,
             'liquidez': 80
         },
         {
             'acronimo': 'TRI',
             'nome': 'Tesouro Direto',
-            'color': 'red',
+            'caracteristica': 'red',
             'risco': 50,
             'liquidez': 50
         }
     ]
 
-    constructor(router) {
+    constructor(router, produtoService) {
         this.router = router;
+        this.produtoService = produtoService;
+    }
+
+    attached() {
+        var This = this;
+        this.produtoService.buscarPerguntasPai()
+            .then(response => response.json())
+            .then(data => {
+                This.produtosPai = data;
+            }).catch(function (error) {
+                console.log(error);
+            });
+
+        this.produtoService.buscarPerguntasFilho()
+            .then(response => response.json())
+            .then(data => {
+                This.produtos = data;
+            }).catch(function (error) {
+                console.log(error);
+            });
+
     }
 
     nextScreen() {
