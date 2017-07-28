@@ -9,7 +9,7 @@ export class Carteira {
     }
 
     nextScreen() {
-        this.router.navigate('objetivo');
+        this.router.navigate('dashboard');
     }
 
 }

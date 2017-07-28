@@ -13,14 +13,14 @@
         <h4 class="center-align">Módulo Básico</h4>
         <div class="valign-wrapper container_produto_pai">
             <div class="center-align container_filho_produto_pai">
-                <a class="produto btn-floating btn-large ${produtoPai.color}" repeat.for="produtoPai of produtosPai">${produtoPai.acronimo}</a>
+                <a class="produto btn-floating btn-large ${produtoPai.caracteristica}" repeat.for="produtoPai of produtosPai">${produtoPai.acronimo}</a>
             </div>
         </div>
 
         <div class="pruduto_separator"></div>
         <div class="row container_produto">
             <div class="col s4 center-align" repeat.for="produto of produtos">
-                <a class="produto btn-floating btn-large ${produto.color}">${produto.acronimo}</a>
+                <a class="produto btn-floating btn-large ${produto.caracteristica}">${produto.acronimo}</a>
                 <div class="progress white">
                     <div class="determinate" style="width: ${produto.liquidez}%"></div>
                 </div>
