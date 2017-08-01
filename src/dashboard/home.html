@@ -1,37 +1,45 @@
 <template>
     <nav>
-        <div class="nav-wrapper">
-            <div class="left">
-                <a class="btn-floating btn-large waves-effect waves-light yellow accent-3"></a>
+        <div class="nav-wrapper nav_color z-depth-2">
+            <div class="left nav_avatar">
+                <a class="btn-floating btn waves-effect waves-light white accent-3">
+                    <img src="resources/images/png/avatar_ARROJADO.png" alt="" class="circle responsive-img"> 
+                </a>
             </div>
-            <div class="center-align">
-                <a href="#" class="brand-logo">Logo</a>
+            <div class="center-align nav_perfil">
+                <h1 class="brand-logo">Conservador</h1>
             </div>
         </div>
     </nav>
-    <div class="container">
-        <h4 class="center-align">Módulo Básico</h4>
-        <div class="valign-wrapper container_produto_pai">
-            <div class="center-align container_filho_produto_pai">
-                <a class="produto btn-floating btn-large ${produtoPai.caracteristica}" repeat.for="produtoPai of produtosPai">${produtoPai.acronimo}</a>
+    <div class="canvas_dashboard">
+        <div class="canvas_modulos">
+            <h2 class="center-align">Módulo Básico</h2>
+            <div class="valign-wrapper container_produto_pai">
+                <div class="center-align container_filho_produto_pai">
+                    <a class="produto btn-floating btn-large z-depth-2 ${produtoPai.caracteristica}" repeat.for="produtoPai of produtosPai">${produtoPai.acronimo}</a>
+                </div>                
+            </div>
+
+            <div class="pruduto_separator"></div>
+            <div class="row container_produto">
+                <div class="col s4 center-align" repeat.for="produto of produtos">
+                    <a class="produto btn-floating z-depth-2 btn-large ${produto.caracteristica}">
+                        <img src="${produto.acronimo}" alt="" class="circle responsive-img">
+                    </a>
+                    <div class="progress white">
+                        <div class="determinate" style="width: ${produto.liquidez}%"><span>Liquidez</span></div>
+                    </div>
+                    <div class="progress white">
+                        <div class="determinate red" style="width: ${produto.risco}%"><span>Risco</span></div>                        
+                    </div>
+                    <div class="center-align produto_nome">
+                        <span>${produto.nome}</span>
+                    </div>    
+                </div>
             </div>
         </div>
-
-        <div class="pruduto_separator"></div>
-        <div class="row container_produto">
-            <div class="col s4 center-align" repeat.for="produto of produtos">
-                <a class="produto btn-floating btn-large ${produto.caracteristica}">${produto.acronimo}</a>
-                <div class="progress white">
-                    <div class="determinate" style="width: ${produto.liquidez}%"></div>
-                </div>
-                <div class="progress white">
-                    <div class="determinate red" style="width: ${produto.risco}%"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row center-align">
-            <a class="waves-effect waves-light btn green ">Investir Agora</a>
+        <div class="center-align space_button_dashboard">
+            <a class="button_dashboard_app btn accent">Investir Agora</a>
         </div>
     </div>
 

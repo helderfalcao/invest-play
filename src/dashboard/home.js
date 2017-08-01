@@ -10,7 +10,7 @@ export class Dashboard {
         {
             'acronimo': 'FGC',
             'nome': 'FGC',
-            'caracteristica': 'green'
+            'caracteristica': 'green',            
         },
         {
             'acronimo': 'TRI',
@@ -31,37 +31,37 @@ export class Dashboard {
     ]
     produtos = [
         {
-            'acronimo': 'CDB',
+            'acronimo': 'resources/images/png/iten_a.png',
             'nome': 'CDB',
-            'caracteristica': 'green',
+            'caracteristica': 'blue lighten-4',
             'risco': 20,
-            'liquidez': 80
+            'liquidez': 80,            
         },
         {
-            'acronimo': 'LCI/LCA',
+            'acronimo': 'resources/images/png/iten_b.png',
             'nome': 'LCI/LCA',
-            'caracteristica': 'light-blue',
+            'caracteristica': 'blue lighten-4 disable',
             'risco': 30,
             'liquidez': 50
         },
         {
-            'acronimo': 'LC',
+            'acronimo': 'resources/images/png/iten_c.png',
             'nome': 'LC',
-            'caracteristica': 'blue',
+            'caracteristica': 'blue lighten-4 disable',
             'risco': 30,
             'liquidez': 80
         },
         {
-            'acronimo': 'FGC',
+            'acronimo': 'resources/images/png/iten_b.png',
             'nome': 'Fundo Investimento',
-            'caracteristica': 'red',
+            'caracteristica': 'blue lighten-4 disable',
             'risco': 20,
             'liquidez': 80
         },
         {
-            'acronimo': 'TRI',
+            'acronimo': 'resources/images/png/iten_a.png',
             'nome': 'Tesouro Direto',
-            'caracteristica': 'red',
+            'caracteristica': 'blue lighten-4 disable',
             'risco': 50,
             'liquidez': 50
         }

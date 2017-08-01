@@ -1,3 +1,37 @@
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;  
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #00374b;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00374b;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #00374b;
+}
+::-webkit-scrollbar-track {
+  background: #00374b;
+  border: 0px none #ffffff;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #00374b;
+}
+::-webkit-scrollbar-track:active {
+  background: #00374b;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 .background {
   background: #00374b !important;    
 }
@@ -12,7 +46,12 @@
 }
 
 .progress {
-  height: 30px !important;
+  height: 20px !important;  
+  color: #222 !important;
+  text-align: left;  
+}
+.progress span {
+  padding-left: 10px;
 }
 
 .facebook_color {
@@ -176,24 +215,89 @@
   max-height: 40px !important;
   border-radius: 6px !important;
 }
+
+/* DASHBOARD */
+.nav_color {
+  background-color: #7eb7c8;
+}
+
+.canvas_dashboard {
+  background: transparent;
+  width: 100%;
+  height: calc(100% - 55px);
+  position: fixed;
+}
+.canvas_modulos {
+  background: transparent;
+  width: 100%;
+  height: calc(100% - 60px);
+  margin-top: 5px;
+}
+
+.canvas_modulos h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.pruduto_separator {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, .4);
+}
+.space_button_dashboard {
+  background: transparent;  
+  height: 60px;
+  position: fixed; 
+  width: 100%;
+  bottom: 0;
+  padding-top: 10px;
+}
+.button_dashboard_app {
+  padding: 2px 20px !important;  
+  height: 40px !important;
+  max-height: 40px !important;
+  border-radius: 6px !important;
+}
+
+.nav_avatar {
+  margin-left: 10px;
+}
+
+.nav_perfil h1 {
+  margin-top: 12px;
+  color: #00374b !important;
+}
+
 .container_produto_pai {
   height: 100px;
+  
 }
 
 .container_filho_produto_pai {
-  width: 100%;
+  width: 100%;   
+  overflow-x:auto;
 }
 
 .produto {
   margin-left: 10px;
 }
 
-.pruduto_separator {
-  width: 100%;
-  height: 5px;
-  background-color: white;
+.produto_nome {
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 .container_produto {
-  margin-top: 30px;
+  padding-top: 10px;
+  background: transparent;
+  width: 100%;
+  height: calc(100% - 150px);
+  white-space: normal;
+  overflow-x: auto;
+} 
+
+.disable {
+  -webkit-filter: saturate(0.1);
+  filter: saturate(0.1);
 }
