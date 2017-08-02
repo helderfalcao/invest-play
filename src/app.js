@@ -15,7 +15,8 @@ export class App {
       { route: 'carteira', name: 'carteira', moduleId: 'perfil/carteira', nav: true },
       { route: 'dashboard', name: 'dashboard', moduleId: 'dashboard/home', nav: true },
       { route: 'adm', name: 'adm', moduleId: 'adm/home', nav: true },
-      { route: 'cadastro-pergunta', name: 'cadastro-pergunta', moduleId: 'adm/cadastro-pergunta', nav: true }
+      { route: 'cadastro-pergunta', name: 'cadastro-pergunta', moduleId: 'adm/cadastro-pergunta', nav: true },
+      { route: 'fluxo-pergunta-produto', name: 'fluxo-pergunta-produto', moduleId: 'dashboard/fluxo-pergunta-produto', nav: true }
     ]);
 
     this.router = router;
