@@ -1,5 +1,5 @@
 <template>
-    <require from="range-value.html"></require>
+    <require from="carteira-investimento.html"></require>
     <div class="carteira_canvas carteira_scroll">
         <div class="container">
             <div class="carteira_title center-align">
@@ -8,56 +8,24 @@
             <div class="carteira_avatar_space z-depth-2">
                 <div class="carteira_avatar center-align">
                     <img class="responsive-img" src="resources/images/png/avatar_ARROJADO.png">
-                </div> 
+                </div>
                 <div class="center-align text_perfil_avatar">
-                    <h2>Conservador</h2>                    
+                    <h2>Conservador</h2>
                 </div>
             </div>
             <div class="text_perfil_avatar center-align">
                 <p>
                     Compara seu investimento em diferentes produtos que combinam com você:
                 </p>
-            </div> 
+            </div>
             <div class="carteira_produtos">
-                <div class="row progress_row">                
-                    <span class="col s4 left-align">Tesouro direto</span>
-                    <div class="progress col s4">
-                        <div class="determinate" style="width: 100%"></div>
-                    </div>
-                    <span class="col s4 right-align">R$ 49.117,75</span>                
-                </div>
-                <div class="row progress_row">                
-                    <span class="col s4 left-align">LCI/LCA</span>
-                    <div class="progress col s4">
-                        <div class="determinate" style="width: 85%"></div>
-                    </div>
-                    <span class="col s4 right-align">R$ 48.713,39</span>                
-                </div>
-                <div class="row progress_row">                
-                    <span class="col s4 left-align">LC</span>
-                    <div class="progress col s4">
-                        <div class="determinate" style="width: 80%"></div>
-                    </div>
-                    <span class="col s4 right-align">R$ 48.034,49</span>                
-                </div>
-                <div class="row progress_row">                
-                    <span class="col s4 left-align">Fundo DI</span>
-                    <div class="progress col s4">
-                        <div class="determinate" style="width: 75%"></div>
-                    </div>
-                    <span class="col s4 right-align">R$ 47.834,49</span>                
-                </div>
-                <div class="row progress_row">                
-                    <span class="col s4 left-align">Poupança</span>
-                    <div class="progress col s4">
-                        <div class="determinate" style="width: 65%"></div>
-                    </div>
-                    <span class="col s4 right-align">R$ 47.017,49</span>                
-                </div>
-            </div>   
-        </div>  
+                <template repeat.for="investimento of investimentos">
+                    <carteira-investimento investimento.bind="investimento"></carteira-investimento>
+                </template>
+            </div>
+        </div>
         <div class="space_carteira_button center-align">
             <button class="button_investimento_app" md-button="disabled.bind: disabled;" click.trigger="nextScreen()">Continuar</button>
-        </div>                  
+        </div>
     </div>
 </template>
