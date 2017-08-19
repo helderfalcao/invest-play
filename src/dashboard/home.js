@@ -74,7 +74,7 @@ export class Dashboard {
 
     attached() {
         var This = this;
-        this.produtoService.buscarPerguntasPai()
+        this.produtoService.buscarProdutosPai()
             .then(response => response.json())
             .then(data => {
                 This.produtosPai = data;
@@ -82,7 +82,7 @@ export class Dashboard {
                 console.log(error);
             });
 
-        this.produtoService.buscarPerguntasFilho()
+        this.produtoService.buscarProdutosFilho()
             .then(response => response.json())
             .then(data => {
                 This.produtos = data;

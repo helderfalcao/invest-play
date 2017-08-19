@@ -11,12 +11,12 @@ export class ProdutoService {
         this.http = http;
     }
 
-    buscarPerguntasPai() {
+    buscarProdutosPai() {
         let request = 'produtosPai';
         return this.http.GET(request);
     }
 
-    buscarPerguntasFilho() {
+    buscarProdutosFilho() {
         let request = 'produtos';
         return this.http.GET(request);
     }
