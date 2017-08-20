@@ -22,19 +22,16 @@ export class InvestimentoService {
     }
 
     buscarInvestimentoAtual() {
-        var request = "investimentoRendimento";
+        var request = "investimentoUsuario";
         return this.http.GET(request);
     }
 
     calcularInvestimentoProduto(valorInicial, valorMensal, quantidadeMes, produto, porcentagem) {
-        var investQuery = "?valorInicial={0}}&valorMensal={1}&quantidadeMes={2}&produto={3}";
-        investQuery.format(
-            this.getInvestimentoReal(valorInicial),
-            this.getInvestimentoReal(valorMensal),
-            quantidadeMes,
-            produto,
-            porcentagem);
-        return this.http.GET(investimentoUsuario + investQuery);
+        var request = "investimentoRendimento";
+        var valorInicialReal = this.getInvestimentoReal(valorInicial, porcentagem);
+        var valorMensalReal = this.getInvestimentoReal(valorMensal, porcentagem);
+        var investQuery = "?valorInicial="+valorInicialReal+"&valorMensal="+valorMensalReal+"+&quantidadeMes="+quantidadeMes+"&produto="+produto;
+        return this.http.GET(request + investQuery);
     }
 
     getInvestimentoReal(investimento, porcentagem) {

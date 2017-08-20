@@ -1,8 +1,8 @@
 <template bindable="investimento">
     <div class="row progress_row">
-        <span class="col s4 left-align">${investimento.produto}</span>
+        <span class="col s4 left-align">${investimento.nome}</span>
         <div class="progress col s4">
-            <div class="determinate" style="width: 100%"></div>
+            <div class="determinate" style="width: ${investimento.percentage}%"></div>
         </div>
         <span class="col s4 right-align">R$ ${investimento.valor}</span>
     </div>

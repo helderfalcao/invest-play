@@ -44,33 +44,6 @@ export class Carteira {
         }
     ]
 
-    investimentos = [
-        {
-            produto: "Fundo Garantidor de Credito",
-            valor: "49.117,75"
-        },
-        {
-            produto: "Tesouro direto",
-            valor: "45.700,70"
-        },
-        {
-            produto: "LCI/LCA",
-            valor: "48.713,39"
-        },
-        {
-            produto: "LC",
-            valor: "48.034,49"
-        },
-        {
-            produto: "Fundo DI",
-            valor: "47.834,49"
-        },
-        {
-            produto: "Poupança",
-            valor: "47.017,49"
-        },
-    ]
-
     constructor(router, investimentoService, produtoService) {
         this.router = router;
         this.investimentoService = investimentoService;
@@ -78,11 +51,20 @@ export class Carteira {
     }
 
     attached() {
-        this.produtoService.buscarPerguntasFilho()
+        var This = this;
+        this.produtoService
             .buscarProdutosFilho()
             .then(response => response.json())
             .then(data => {
                 This.produtos = data;
+                This.definePercentageProducts(This.produtos);
+                This.investimentoService
+                    .buscarInvestimentoAtual()
+                    .then(response => response.json())
+                    .then(data => {
+                        This.investimentoAtual = data[0];
+                        This.calcularInvestimentoProdutos(data[0]);
+                    });
             }).catch(function (error) {
                 console.log(error);
             });
@@ -92,7 +74,30 @@ export class Carteira {
         this.router.navigate('dashboard');
     }
 
-    createInvestiments() {
-        
+    assigneInvestiments() {
+        This.investimentosAtuais
+    }
+
+    definePercentageProducts(products) {
+        var percentage = 100/products.length;
+        products.forEach(function(prod) {
+            prod['percentage'] = percentage;
+        }, this);
+    }
+    calcularInvestimentoProdutos() {
+        var investimentoAtual = this.investimentoAtual;
+        var This = this;
+        this.produtos.forEach(function(prod) {
+            This.investimentoService.calcularInvestimentoProduto(
+                investimentoAtual.valorInicial,
+                investimentoAtual.valorMensal,
+                investimentoAtual.tempoInvestimento,   
+                prod.nome,
+                prod.percentage
+            ).then(response => response.json())
+            .then(data => {
+                prod.valor = data;
+            });
+        }, this);
     }
 }
