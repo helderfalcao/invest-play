@@ -1,31 +1,24 @@
-<template bindable="pergunta">
-    <nav>
-        <div class="nav-wrapper nav_color z-depth-2">
-            <div class="left nav_avatar">
-                <a class="btn-floating btn waves-effect waves-light white accent-3">
-                    <img src="resources/images/png/avatar_ARROJADO.png" alt="" class="circle responsive-img"> 
-                </a>
+<template>
+    <div class="perfil_canvas">
+        <form action="#">
+            <div class="container">
+                <div class="center-align perfil_title">
+                    <h1>${pergunta.objetivo}</h1>
+                </div> 
+                <div class="center-align perfil_pergunta">
+                    <h2>${pergunta.titulo}</h2>
+                </div>    
+                <div class="center-align">
+                    <template repeat.for="opcao of pergunta.opcoes">    
+                        <a class="waves-effect waves-light btn-large button_opcao" click.trigger="nextScreen(opcao)">${opcao.descricao}</a>                    
+                    </template>    
+                </div>                
             </div>
-            <div class="right">
-                <button class="btn" style="margin-right: 15px;">Investir agora</button>
-            </div>
-        </div>
-    </nav>
-    <div class="canvas_produto">
-        <div class="produto_content">
-            <div class="title-modulo center-align">
-                <img src="resources/images/svg/fgc-icon.svg" alt="" class="circle responsive-img z-depth-2"> 
-            </div>
-            <div class="text_content container">
-                O Fundo Garantido de Crédito (FGC) é uma associação criada para resguardar os
-                investidores em alguns produtos disponíveis no mercado. Ele funciona como um
-                seguro caso o banco que você investiu seu dinheiro quebre. Ele poderá ressacir
-                até R$ 250 mil.
-            </div>
-        </div>
-    </div>    
-    <div class="space_carteira_button">
-        <button class="btn left" style="margin-left: 10px;">Voltar</button>
-        <button class="btn right" style="margin-right: 10px;">Testar conhecimento</button>
+            <!-- <div class="row">
+                <div class="col s12 right-align">
+                    <button md-button="disabled.bind: disabled;" click.trigger="nextScreen()">Continuar</button>
+                </div>
+            </div> -->
+        </form>
     </div>
 </template>

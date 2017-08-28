@@ -24,7 +24,7 @@
             <div class="row container_produto">
                 <div class="col s4 center-align" repeat.for="produto of produtos">
                     <a class="produto btn-floating z-depth-2 btn-large ${produto.caracteristica}">
-                        <img src="${produto.acronimo}" alt="" class="circle responsive-img">
+                        <img src="resources/images/png/${produto.acronimo}.png" click.delegate="perguntaFlow(produto._id)" alt="" class="circle responsive-img">
                     </a>
                     <div class="progress white">
                         <div class="determinate" style="width: ${produto.liquidez}%"><span>Liquidez</span></div>

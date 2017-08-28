@@ -20,4 +20,9 @@ export class ProdutoService {
         let request = 'produtos';
         return this.http.GET(request);
     }
+
+    buscarProduto(produtoId) {
+        let request = 'produtos/' + produtoId;
+        return this.http.GET(request);
+    }
 }

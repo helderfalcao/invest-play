@@ -16,6 +16,7 @@ export class App {
       { route: 'dashboard', name: 'dashboard', moduleId: 'dashboard/home', nav: true },
       { route: 'adm', name: 'adm', moduleId: 'adm/home', nav: true },
       { route: 'cadastro-pergunta', name: 'cadastro-pergunta', moduleId: 'adm/cadastro-pergunta', nav: true },
+      { route: 'produto-home', name: 'produto-home', moduleId: 'dashboard/produto-home', nav: true },
       { route: 'fluxo-pergunta-produto', name: 'fluxo-pergunta-produto', moduleId: 'dashboard/fluxo-pergunta-produto', nav: true }
     ]);
 

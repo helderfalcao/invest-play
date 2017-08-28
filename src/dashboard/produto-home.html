@@ -1,0 +1,28 @@
+<template>
+    <nav>
+        <div class="nav-wrapper nav_color z-depth-2">
+            <div class="left nav_avatar">
+                <a class="btn-floating btn waves-effect waves-light white accent-3">
+                    <img src="resources/images/png/avatar_ARROJADO.png" alt="" class="circle responsive-img"> 
+                </a>
+            </div>
+            <div class="right">
+                <button class="btn" style="margin-right: 15px;">Investir agora</button>
+            </div>
+        </div>
+    </nav>
+    <div class="canvas_produto">
+        <div class="produto_content">
+            <div class="title-modulo center-align">
+                <img src="resources/images/svg/${produto.acronimo}.svg" alt="" class="circle responsive-img z-depth-2"> 
+            </div>
+            <div class="text_content container">
+                ${produto.descricao}
+            </div>
+        </div>
+    </div>    
+    <div class="space_carteira_button">
+        <button class="btn left" style="margin-left: 10px;">Voltar</button>
+        <button class="btn right" style="margin-right: 10px;" click.delegate="fluxoPerguntas()">Testar conhecimento</button>
+    </div>
+</template>

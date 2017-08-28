@@ -33,6 +33,11 @@ module.exports = {
         "materialize-css/dist/css/materialize.css!text",
         "fetch",
         "jquery",
+        "text",
+        "aurelia-materialize-bridge",
+        "aurelia-materialize-bridge/**/*.js",
+        "aurelia-materialize-bridge/**/*.html!text",
+        "aurelia-materialize-bridge/**/*.css!text",
         "jquery-mask-plugin"
       ],
       "options": {

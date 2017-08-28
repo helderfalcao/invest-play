@@ -21,4 +21,9 @@ export class PerguntaService {
         let request = 'perguntas/' + opcao.proximaPerguntaId;
         return this.http.GET(request);
     }
+
+    buscarPergunta(idPergunta) {
+        let request = 'perguntas/' + idPergunta;
+        return this.http.GET(request);
+    }
 }

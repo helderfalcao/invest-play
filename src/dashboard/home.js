@@ -96,4 +96,8 @@ export class Dashboard {
         this.router.navigate('objetivo');
     }
 
+    perguntaFlow(produtoId) {
+        this.router.navigate('produto-home?produtoId=' + produtoId);
+    } 
+
 }
