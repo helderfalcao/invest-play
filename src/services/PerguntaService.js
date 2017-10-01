@@ -26,4 +26,20 @@ export class PerguntaService {
         let request = 'perguntas/' + idPergunta;
         return this.http.GET(request);
     }
+
+    buscarPerguntas() {
+        let request = 'perguntas';
+        return this.http.GET(request);
+    }
+    
+    salvarPergunta(Pergunta) {
+        let request = 'perguntas';
+        return this.http.POST(request, Pergunta);
+    }
+
+    editarPergunta(Pergunta) {
+        let request = 'perguntas';
+        return this.http.PUT(request, Pergunta);
+    }
+
 }

@@ -18,6 +18,7 @@ export class App {
       { route: 'produto-home', name: 'produto-home', moduleId: 'dashboard/produto-home', nav: true },
       { route: 'fluxo-pergunta-produto', name: 'fluxo-pergunta-produto', moduleId: 'dashboard/fluxo-pergunta-produto', nav: true },
       { route: 'cadastro-pergunta', name: 'cadastro-pergunta', moduleId: 'adm/cadastro/cadastro-pergunta' },
+      { route: 'consulta-pergunta', name: 'consulta-pergunta', moduleId: 'adm/consulta/consulta-pergunta' },
       { route: 'cadastro-exercicio', name: 'cadastro-exercicio', moduleId: 'adm/cadastro/cadastro-exercicio' },
       { route: 'consulta-exercicio', name: 'consulta-exercicio', moduleId: 'adm/consulta/consulta-exercicio' },
       { route: 'cadastro-modulo', name: 'cadastro-modulo', moduleId: 'adm/cadastro/cadastro-modulo' },
