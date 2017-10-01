@@ -1,0 +1,30 @@
+<template>
+    <div class="container">
+        <h4>Cadastro Modulo</h4>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field">
+                        <input placeholder="nome modulo" id="nome_modulo" type="text" class="validate" value.bind="modulo.nome" />
+                        <label for="nome_modulo">Nome Modulo</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="descricao_modulo" placeholder="descrição modulo" class="materialize-textarea" value.bind="modulo.descricao"></textarea>
+                        <label for="descricao_modulo">Descrição modulo</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="imagem modulo" id="imagem_modulo" type="text" class="validate" value.bind="modulo.imagem" />
+                        <label for="imagem_modulo">Imagem Modulo</label>
+                    </div>
+                </div>
+                <div class="row  right-align">
+                    <a class="btn-floating btn-large waves-effect waves-light red" click.trigger="salvarModulo()"><i class="material-icons">add</i></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</template>

@@ -8,7 +8,7 @@ export class ServiceUtils {
     CLIENT_URL = "http://localhost:9000/";
 
     //HOM Endpoints
-    //API_URL = "https://investplaybrdev.herokuapp.com/v1/";
+    //API_URL = "https://investplayhom.herokuapp.com/v1/";
     //CLIENT_URL = "https://d3879c8quvq0ty.cloudfront.net/";
     // validResponse = function (response) {
     //     if (response.status == 200) {
