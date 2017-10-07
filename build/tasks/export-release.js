@@ -78,7 +78,7 @@ gulp.task('export', function(callback) {
 });
 
 gulp.task('cacheBuster', function () {
-    return gulp.src('./export/index.html')
+    return gulp.src(['./export/index.html','./export/*.js'])
         .pipe(cachebust({
         type: 'timestamp'
     }))
