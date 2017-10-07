@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="93.4881mm" height="52.1309mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 8954 4993"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str2 {stroke:#4B4B4D;stroke-width:71.8344}
+    .str0 {stroke:#373435;stroke-width:19.1558}
+    .str1 {stroke:#FEFEFE;stroke-width:19.1558;stroke-dasharray:95.779137 19.155827}
+    .fil7 {fill:none}
+    .fil5 {fill:#FEFEFE}
+    .fil8 {fill:#E6E7E8}
+    .fil9 {fill:#4B4B4D}
+    .fil0 {fill:#4B4B4D}
+    .fil4 {fill:#4AB759}
+    .fil6 {fill:#00A859}
+    .fil3 {fill:#33A29A}
+    .fil12 {fill:#B4835A}
+    .fil10 {fill:#C1966B}
+    .fil1 {fill:#FDFDFD}
+    .fil2 {fill:#FFD652}
+    .fil11 {fill:url(#id0)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="7400.84" y1="4469.86" x2="7598.26" y2="4488.54">
+   <stop offset="0" style="stop-opacity:1; stop-color:#C1966B"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#B4835A"/>
+  </linearGradient>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_183680448016">
+   <polygon class="fil0" points="1031,4723 3768,4705 3970,4699 4310,4700 5221,4702 7927,4724 7926,234 7925,143 1029,159 "/>
+   <polygon class="fil1" points="866,53 854,4700 1031,4700 1030,170 1032,160 7822,160 7925,170 7925,4700 8100,4700 8085,62 8019,1 934,0 "/>
+   <path class="fil1" d="M48 4891l8858 0c40,-43 24,21 43,-69 9,-45 3,-59 2,-104l-806 4 -3042 23c-111,113 -448,69 -659,69 -122,0 -254,5 -374,2 -118,-4 -153,-42 -222,-73l-3039 -21 -805 -4c-1,35 -9,70 1,104 26,84 3,25 43,69z"/>
+   <path class="fil2" d="M8906 4891l-8858 0c91,75 252,98 429,102l106 0c186,-3 378,-21 515,-21l5609 0c392,0 2000,79 2199,-81z"/>
+   <path class="fil3" d="M5103 4745c-230,-37 -1021,-34 -1255,-2 69,31 104,69 222,73 120,3 252,-2 374,-2 211,0 548,44 659,-69z"/>
+   <rect class="fil4" x="1030" y="170" width="6862" height="392"/>
+   <rect class="fil5" x="1251" y="245" width="1664" height="186"/>
+   <rect class="fil6" x="2958" y="245" width="237" height="186"/>
+   <rect class="fil5 str0" x="1634" y="917" width="2344" height="160"/>
+   <rect class="fil5 str0" x="1634" y="1242" width="1639" height="160"/>
+   <rect class="fil5 str0" x="4573" y="917" width="2479" height="160"/>
+   <rect class="fil5 str0" x="4573" y="1242" width="1639" height="160"/>
+   <rect class="fil7 str1" x="2871" y="1660" width="1090" height="1195" rx="173" ry="211"/>
+   <rect class="fil8 str0" x="1634" y="3117" width="2344" height="160"/>
+   <rect class="fil8 str0" x="1634" y="3385" width="1618" height="160"/>
+   <rect class="fil8 str0" x="1634" y="3654" width="2344" height="950"/>
+   <rect class="fil9 str1" transform="matrix(0.90372 0.428123 -0.52225 1.10241 1013.09 1484.3)" width="1090" height="980" rx="173" ry="173"/>
+   <rect class="fil8 str0" x="4607" y="1694" width="2461" height="1267"/>
+   <circle class="fil7 str2" cx="5840" cy="2321" r="383"/>
+   <polygon class="fil9" points="5734,2141 5729,2479 6063,2295 "/>
+   <rect class="fil8 str0" x="4624" y="3117" width="2344" height="160"/>
+   <rect class="fil8 str0" x="4624" y="3396" width="2344" height="160"/>
+   <rect class="fil8 str0" x="4624" y="3717" width="1431" height="160"/>
+   <rect class="fil8 str0" x="4624" y="3945" width="1431" height="160"/>
+   <rect class="fil8 str0" x="4624" y="4207" width="2377" height="160"/>
+   <rect class="fil8 str0" x="4624" y="4460" width="2377" height="160"/>
+   <path class="fil5" d="M8450 4800l-494 -3262 59 -8 -6 -60 -183 -2 1 67 56 5 43 264 -439 -6 -48 -263 66 -3 -9 -61 -193 11 4 49 65 3 500 3274 -51 -1 16 65 161 -4 -3 -68 -57 -1 -46 -229 454 6 43 230 -61 -5 4 69 180 -8 -4 -58 -58 -4zm-236 -1125l64 394 -437 2 -61 -407 434 11zm-378 443l433 11 65 393 -437 2 -61 -406zm292 -894l65 394 -437 2 -61 -407 433 11zm-2 -61l-436 2 -62 -406 434 10 64 394zm-72 -467l-434 -3 -62 -376 441 0 55 379zm-65 -448l-436 -3 -62 -396 434 2 64 397z"/>
+   <g>
+    <rect class="fil10" transform="matrix(0.660959 -0.0191256 0.0191256 0.660959 7540.68 4066.38)" width="1335" height="1183"/>
+    <polygon class="fil11" points="7573,4850 7287,4744 7262,3948 7550,4069 "/>
+    <polygon class="fil12" points="7259,3958 8136,3932 8430,4052 7548,4078 "/>
+    <g>
+     <rect class="fil5" transform="matrix(0.999606 -0.0280787 0.0280787 0.999606 7636.57 4643.25)" width="310" height="137"/>
+     <rect class="fil9" transform="matrix(0.999606 -0.0280787 0.0280787 0.999606 7654.97 4659.65)" width="248.662" height="10.3441"/>
+     <rect class="fil9" transform="matrix(0.999606 -0.0280787 0.0280787 0.999606 7655.55 4680.23)" width="248.662" height="10.3441"/>
+     <rect class="fil9" transform="matrix(0.606994 -0.0170503 0.0280787 0.999606 7656.25 4705.24)" width="248.662" height="10.3441"/>
+     <rect class="fil9" transform="matrix(0.606994 -0.0170503 0.0280787 0.999606 7656.99 4731.63)" width="248.662" height="10.3441"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

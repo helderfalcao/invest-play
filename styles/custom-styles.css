@@ -362,6 +362,7 @@ header .header-img img {
 .notebook-container img {
     box-sizing: border-box;
     display: block;
+    width: 100%;
     max-width: 100%;
 }
 
@@ -1821,7 +1822,7 @@ footer.footer.no-menu {
 }
 
 footer.footer {
-    background: #fff;
+    background: #4CAF50;
     padding-top: 5rem;
     margin-bottom: -150px;    
 }
@@ -1829,7 +1830,7 @@ footer.footer {
 .footer h3,
 .footer p,
 .footer a {
-    color: #fafafa;
+    color: #fff;
 }
 
 .footer a {
@@ -1881,7 +1882,7 @@ footer.footer {
 .footer .setlrsocial p {
     font-size: 100%;
     font-weight: 500;
-    color: #FFF;
+    color: #fff;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -1910,7 +1911,7 @@ footer.footer {
 
 .setlrsocial .social-network i:before {
     font-size: 150%;
-    color: #FFF;
+    color: #fff;
 }
 
 .sociallogo li {
@@ -1930,7 +1931,7 @@ footer.footer {
 @media screen and (min-width: 400px) {
     a.blog-btn {
         padding-right: 4em;
-        background: #fff url("../images/svg/arrow-pointing-green.svg") no-repeat;
+        background: #4CAF50 url("../images/svg/arrow-pointing-green.svg") no-repeat;
         background-size: 25px;
         background-position: 90% 50%;
     }
