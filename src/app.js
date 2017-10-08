@@ -9,7 +9,7 @@ export class App {
   configureRouter(config, router) {
     config.title = 'Investplay';
     config.map([
-      { route: ['', 'apresentacao'], name: 'apresentacao', moduleId: 'intro/apresentacao', nav: true },
+      { route: ['', 'apresentacao'], name: 'apresentacao', moduleId: 'eduflow/login', nav: true },
       { route: 'investimento', name: 'investimento', moduleId: 'perfil/investimento', nav: true },
       { route: 'fluxo-perfil', name: 'fluxo-perfil', moduleId: 'perfil/fluxo-perfil', nav: true },
       { route: 'carteira', name: 'carteira', moduleId: 'perfil/carteira', nav: true },

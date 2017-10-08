@@ -1,8 +1,19 @@
 <template>
-    <require from="range-value.html"></require>
-    <div class="container">
-        <div class="collection">
-            <a repeat.for="pergunta of perguntas" href="#resposta-pergunta?idPergunta=${pergunta._id}" class="collection-item">${pergunta.titulo}</a>
+    <div class="canvas_fluid">
+        <div class="text_top">
+            Qual a melhor forma de economizar para os hábitos abaixo:
+        </div>
+        <div class="three_center row">
+            <div class="col s6 row" repeat.for="pergunta of perguntas">
+                <a href="#resposta-pergunta?idPergunta=${pergunta._id}&idExercicio=${idExercicio}" class="col s5 option_four option_selected">
+                            <img src="resources/images/svg/${imagemPergunta(pergunta)}.svg">
+                            <span class="col s12">${pergunta.titulo}</span>
+                        </a>
+            </div>
+        </div>
+        <div class="login_btn">
+            <a href="two.html" class="waves-effect waves-light btn btn_color">CONTINUAR</a>
         </div>
     </div>
+
 </template>

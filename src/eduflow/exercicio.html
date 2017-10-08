@@ -1,8 +1,22 @@
 <template>
-    <require from="range-value.html"></require>
-    <div class="container">
-        <div class="collection">
-            <a repeat.for="exercicio of exercicios" href="#modulo-aluno?idExercicio=${exercicio._id}" class="collection-item">${exercicio.nome}</a>
+    <nav class="navbar_invest">
+        <div class="nav-wrapper">
+            <a href="#" class="left logo_left">                        
+                        <img src="resources/images/svg/icone.svg" />
+                    </a>
+            <a href="#" class="right logo_right">
+                        <img src="resources/images/svg/logo.svg">
+                    </a>
+        </div>
+    </nav>
+    <div class="canvas">
+        <div class="pergunta_mod">
+            <label>Escolha um módulo abaixo:</label>
+        </div>
+        <div class="resposta_mod row">
+            <div class="col s12 option_mod" repeat.for="exercicio of exercicios">
+                <a href="#modulo-aluno?idExercicio=${exercicio._id}" class="waves-effect waves-light btn_mod btn_color">${exercicio.nome}</a>
+            </div>
         </div>
     </div>
 </template>

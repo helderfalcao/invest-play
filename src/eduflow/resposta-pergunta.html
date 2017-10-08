@@ -1,11 +1,20 @@
 <template>
-    <require from="range-value.html"></require>
-    <div class="container">
-        <div class="row center-align">
-            <h1>Administração</h1>
-            <a class="waves-effect waves-light btn" href="#consulta-exercicio">Exercicios</a>
-            <a class="waves-effect waves-light btn" href="#consulta-modulo">Modulos</a>
-            <a class="waves-effect waves-light btn" href="#consulta-pergunta">Perguntas</a>
+   <div class="canvas_fluid">
+            <div class="four_content row">
+                <div class="col s12 img_resposta">
+                    <img src="resources/images/svg/${pergunta.imagem}.svg">
+                </div>
+                <div class="col s12 item_text">
+                    <label>
+                        ${pergunta.descricao}
+                    </label>
+                </div>
+                <div class="col s12">
+                    <textarea class="txt_area" value.bind="resposta.valorTexto" placeholder="Sua resposta"></textarea>
+                </div>                
+            </div>
+            <div class="login_btn">
+                <a click.delegate="salvarResposta()" class="waves-effect waves-light btn btn_color">CONTINUAR</a>
+            </div>
         </div>
-    </div>
 </template>
