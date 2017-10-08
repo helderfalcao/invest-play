@@ -1,0 +1,8 @@
+<template>
+    <require from="range-value.html"></require>
+    <div class="container">
+        <div class="collection">
+            <a repeat.for="exercicio of exercicios" href="#modulo-aluno?idExercicio=${exercicio._id}" class="collection-item">${exercicio.nome}</a>
+        </div>
+    </div>
+</template>

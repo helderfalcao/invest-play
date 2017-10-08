@@ -28,5 +28,10 @@ export class ModuloService {
         let request = 'modulos';
         return this.http.PUT(request, Modulo);
     }
+
+    buscarModuloPorExercicio(idExercicio) {
+        let request = 'modulosByExercicio/' + idExercicio;
+        return this.http.GET(request);
+    }
     
 }

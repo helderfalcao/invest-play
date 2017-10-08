@@ -31,7 +31,7 @@ export class PerguntaService {
         let request = 'perguntas';
         return this.http.GET(request);
     }
-    
+
     salvarPergunta(Pergunta) {
         let request = 'perguntas';
         return this.http.POST(request, Pergunta);
@@ -40,6 +40,11 @@ export class PerguntaService {
     editarPergunta(Pergunta) {
         let request = 'perguntas';
         return this.http.PUT(request, Pergunta);
+    }
+
+    buscarPerguntaPorModulo(idModulo) {
+        let request = 'perguntasByModulo/' + idModulo;
+        return this.http.GET(request);
     }
 
 }

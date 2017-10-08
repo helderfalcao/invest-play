@@ -1,0 +1,10 @@
+<template>
+    <require from="range-value.html"></require>
+    <div class="container">
+        <div class="input-field col s6">
+            <input placeholder="login usuário" id="login" type="text" class="validate" value.bind="usuario">
+            <label for="login">Login usuário</label>
+        </div>
+        <a class="waves-effect waves-light btn" click.delegate="login()">Login</a>
+    </div>
+</template>

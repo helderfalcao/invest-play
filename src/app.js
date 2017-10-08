@@ -22,13 +22,20 @@ export class App {
       { route: 'cadastro-exercicio', name: 'cadastro-exercicio', moduleId: 'adm/cadastro/cadastro-exercicio' },
       { route: 'consulta-exercicio', name: 'consulta-exercicio', moduleId: 'adm/consulta/consulta-exercicio' },
       { route: 'cadastro-modulo', name: 'cadastro-modulo', moduleId: 'adm/cadastro/cadastro-modulo' },
-      { route: 'consulta-modulo', name: 'consulta-modulo', moduleId: 'adm/consulta/consulta-modulo' }
+      { route: 'consulta-modulo', name: 'consulta-modulo', moduleId: 'adm/consulta/consulta-modulo' },
+      //Fluxo edu
+      { route: 'login-aluno', name: 'login-aluno', moduleId: 'eduflow/login' },
+      { route: 'exercicio-aluno', name: 'exercicio-aluno', moduleId: 'eduflow/exercicio' },
+      { route: 'modulo-aluno', name: 'modulo-aluno', moduleId: 'eduflow/modulo' },
+      { route: 'resposta-pergunta', name: 'resposta-pergunta', moduleId: 'eduflow/resposta-pergunta' }
+      
     ]);
 
     this.router = router;
   }
 
-  activate() {
+  configurarUsuario(usuario) {
+    this.usuario = usuario;
   }
 
 }

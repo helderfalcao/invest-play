@@ -1,0 +1,8 @@
+<template>
+    <require from="range-value.html"></require>
+    <div class="container">
+        <div class="collection">
+            <a repeat.for="pergunta of perguntas" href="#resposta-pergunta?idPergunta=${pergunta._id}" class="collection-item">${pergunta.titulo}</a>
+        </div>
+    </div>
+</template>
