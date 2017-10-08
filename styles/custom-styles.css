@@ -1,5 +1,5 @@
 .background {
-  background: #00374b !important;    
+  background: #e9e9e9 !important;    
 }
 
 .presentation-container {
@@ -23,285 +23,261 @@
 .facebook_color {
   background-color: #3B5998 !important;
 }
+
+.btn_color {
+  background-color: #80a962 !important;  
+}
+
+.btn_disabled {
+  background-color: #c5c5c5 !important;
+  color: gray !important;
+}
+
 .loading_div i {
   color: #fff;
   font-size: 4em;
   margin-top: 30%;
 }
-/* APRESENTAÇÃO */
-.canvas {
-  background: transparent;
-  width: 100%;
+
+.navbar_invest {
+  background: #80a962;
+  height: 80ox;
+}
+
+.logo_left {  
+  width: 150px;
   height: 100%;
-  position: fixed;
-  padding-top: 25px;
 }
-.slider_presentation {
+
+.logo_left img {  
+  width: 25px;
+  margin-top: 1px;  
+  margin-left: 15px;
+}
+
+.logo_right {  
+  width: 150px;
+  height: 100%;
+
+}
+
+.logo_right img {
+  width: 120px;
+  margin-top: 15px;  
+  margin-left: 15px;
+}
+
+.canvas {
   width: 100%;
-  height: calc(100% - 150px);  
+  height: calc(100% - 56px);
+  position: fixed;  
 }
-.space_enter_app {
-  background: transparent;
-  height: 150px;
-  padding-top: 40px;
+
+.logo_view {
+  width: 100%;  
+  height: 220px;
+  text-align: center;
 }
-.button_enter_app {
-  padding: 0px 20px !important;  
-  height: 40px !important;
-  max-height: 40px !important;
-  border-radius: 6px !important;
+
+.logo_view img { 
+  width: 150px;
+  margin-top: 20px;
 }
-/* IVESTIMENTO */
-.investimento_canvas {
-  background: transparent;
-  width: 100%;
-  height: calc(100% - 0px);
-  position: fixed;
-  margin-top: 0px !important;  
-}
-.investimento_title h1 {
-  color: #4caf50;
-  font-size: 1.8em;  
-}
-.investimento_text {
-  color: #fff;
-  font-size: 1.1em; 
-}
-.investimento_text_green {
-  color: #4caf50;
-  font-size: 1.2em;
-}
-.space_investimento_button {
-  background: transparent;
+
+.frase_login {
+  width: 100%;  
   height: 60px;
-  position: fixed; 
-  width: 100%;
-  bottom: 0;
-  padding-top: 10px;
-}
-.button_investimento_app {
-  padding: 0px 20px !important;  
-  height: 40px !important;
-  max-height: 40px !important;
-  border-radius: 6px !important;
-}
-/* QUESTÕES PERFIL */
-.perfil_canvas {
-  background: transparent;
-  width: 100%;
-  height: calc(100% - 0px);
-  position: fixed;
-  margin-top: 0px !important;  
-}
-.perfil_title h1 {
-  color: #4caf50;
-  font-size: 1.8em;  
-}
-.perfil_pergunta h2 {
-  color: #fff;
-  font-size: 1.5em;
-  padding-top: 50px; 
-  padding-bottom: 50px;
-}
-.button_opcao {
-  background: #fff !important;
-  color: #00374b !important;
-  border-radius: 20px !important;
-  margin-top: 20px !important;
-  max-width: 100%;
-  width: 100%;
-  white-space: normal !important;
-}
-/* CARTEIRA */
-.carteira_canvas {
-  background: transparent;
-  width: 100%;
-  height: calc(100% - 0px);
-  position: fixed;
-  margin-top: 0px !important;  
-}
-.carteira_scroll {
-  background: transparent;
-  width: 100%;
-  height: calc(100% - 60px);
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-.carteira_title h1 {
-  color: #fff;
-  font-size: 1.8em;    
-}
-.carteira_avatar_space {
-  background: #7eb7c8;
-  width: 100%;
-  height: 220px;  
-}
-.carteira_avatar {
-  background: transparent;
-  width: 100%;
-  height: auto;  
-}
-.text_perfil_avatar {
-  background: transparent;
-  width: 100%;
-}
-.text_perfil_avatar h2 {
-  font-size: 1.8em;
-  margin-top: 5px;
-  color: #fff;
-  text-transform: uppercase;
-}
-.text_perfil_avatar p {
-  font-size: 1.3em;
-  margin-top: 10px;
-  color: #fff;  
-}
-.carteira_produtos {
-  background: transparent;    
-}
-.carteira_produtos span {
-  color: #fff;
-  padding-top: 10px !important;
-}
-.progress_row {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
-}
-.space_carteira_button {
-  background: transparent;
-  height: 60px;
-  position: fixed; 
-  width: 100%;
-  bottom: 0;
-  padding-top: 10px;
-}
-.button_carteira_app {
-  padding: 0px 20px !important;  
-  height: 40px !important;
-  max-height: 40px !important;
-  border-radius: 6px !important;
+  text-align: center;  
 }
 
-/* DASHBOARD */
-.nav_color {
-  background-color: #7eb7c8;
+.frase_login label { 
+  font-size: 26px;
+  line-height: 26px;
+  color: #666;
 }
 
-.canvas_dashboard {
-  background: transparent;
+.aluno_input {
   width: 100%;
-  height: calc(100% - 55px);
-  position: fixed;
-}
-.canvas_modulos {
-  background: transparent;
-  width: 100%;
-  height: calc(100% - 60px);
-  margin-top: 5px;
-}
-
-.canvas_modulos h2 {
-  color: #fff;
-  font-size: 1.5em;
-  margin-top: 10px;
-  margin-bottom: 0px;
-}
-.pruduto_separator {
-  width: 100%;
-  height: 2px;
-  background-color: rgba(255, 255, 255, .4);
-}
-.space_button_dashboard {
-  background: transparent;  
-  height: 60px;
-  position: fixed; 
-  width: 100%;
-  bottom: 0;
-  padding-top: 10px;
-}
-.button_dashboard_app {
-  padding: 2px 20px !important;  
-  height: 40px !important;
-  max-height: 40px !important;
-  border-radius: 6px !important;
-}
-
-.nav_avatar {
-  margin-left: 10px;
-}
-
-.nav_perfil h1 {
-  margin-top: 12px;
-  color: #00374b !important;
-}
-
-.container_produto_pai {
-  height: 100px;
+  height: calc(100% - 360px);  
+  padding: 40px; 
   
 }
 
-.container_filho_produto_pai {
-  width: 100%;   
-  overflow-x:auto;
+.aluno_input label {
+  font-size: 18px;
+  color: #666;  
+  margin-left: 0px;
 }
 
-.produto {
-  margin-left: 10px;
+.inp_login {
+  width: 100% !important;  
+  height: 60px !important;
+  padding-left: 15px !important;  
+  background: #fff !important;
+  border: 1px solid #c1c1c1 !important;
 }
 
-.produto_nome {
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.container_produto {
-  padding-top: 10px;
-  background: transparent;
+.login_btn {
   width: 100%;
-  height: calc(100% - 150px);
-  white-space: normal;
-  overflow-x: auto;
-} 
-
-.disable {
-  -webkit-filter: saturate(0.1);
-  filter: saturate(0.1);
+  height: 80px;  
+  text-align: center;
 }
 
-.canvas_produto {
-  position: fixed;
-  background: transparent;
+.pergunta_mod {
   width: 100%;
-  height: calc(100% - 140px);
-  padding: 20px 20px;
+  height: 100px;  
+  padding-top: 20px !important;
+  padding-left: 15px;
 }
 
-.produto_content {  
+.pergunta_mod label {
+  font-size: 1.8em;
+  color: #666;  
+}
+
+.resposta_mod {
+  width: 100%;
+  height: calc(100% - 100px);    
+}
+
+.option_mod {  
+  height: 200px;
+}
+
+.btn_mod {
+   width: 200px;
+   height: 100px;
+   border-radius: 6px;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3) !important;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) !important;
+   color: #fff;
+   font-size: 2.2em;
+   line-height: 1.3em;
+   padding: 10px 20px;
+   text-align: center;
+   left: 50%;
+   margin-left: -100px;
+   margin-top: 50px;
+}
+
+.canvas_fluid {
   width: 100%;
   height: 100%;
-  background: #7eb7c8;
-  /* white-space: normal;
-  overflow-x: auto; */
+  position: fixed;  
 }
 
-.title-modulo img {
-  width: 80px;
-  margin-top: -10px;
+.three_center {
+  width: 100%;  
+  height: calc(100% - 220px);    
+  padding: 15px;
 }
-.text_content {
-  padding: 10px;
+
+.text_top {
   width: 100%;
-  height: calc(100% - 80px);
-  background: transparent;
-  text-align: justify;
-   white-space: normal;
-  overflow-x: auto;
-  color: #fff;
-  font-size: 1.3em;
+  height: 140px;
+  font-size: 24px;
+  padding: 15px;    
 }
 
-.container {
-  margin-top: 80px !important;
+.option_selected {
+  background: #80a962 !important;
+  color: #fff;
 }
+
+.option_four {
+  border: 1px solid #c1c1c1;
+  height: 200px;
+  border-radius: 6px;
+  text-align: center;
+  margin: 0px !important;
+}
+
+.option_four img {
+  width: 60px;
+  margin-top: 40px;
+}
+
+.option_four span {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.option_four:hover { 
+  background: rgba(0, 0, 0, 0.1)
+}
+
+.five_content {
+  width: 100%;
+  height: calc(100% - 70px);    
+  padding: 15px;
+}
+
+.five_content label {
+  font-size: 26px;
+  color: #666;  
+  margin-top: 10px;  
+}
+.five_content div img {
+  position: relative;
+  width: 150px;  
+  left: 50%;  
+  margin-left: -75px;
+  padding: 10px;
+}
+
+.four_content {
+  width: 100%;
+  height: calc(100% - 65px);    
+  padding: 15px;  
+}
+
+.img_resposta {
+  width: 100%;
+  height: 140px;
+  text-align: center;  
+}
+
+.img_resposta img {
+  width: 80px;
+  margin-top: 10px;
+  
+}
+
+.item_text {
+  width: 100%;
+  height: 160px;    
+  overflow: auto;
+}
+
+.item_text label{ 
+  font-size: 20px;
+  color: #666;
+  line-height: 26px;
+
+}
+
+.txt_area {
+  width: 100%;
+  height: 250px;
+  background: #fff;
+  border: 1px solid #c1c1c1;
+}
+
+@media (max-width: 575px) { 
+  
+ }
+
+@media (max-width: 767px) { 
+  
+ }
+
+@media (max-width: 991px) { 
+  
+ }
+
+@media (max-width: 1199px) { 
+  
+ }
+
 
       
