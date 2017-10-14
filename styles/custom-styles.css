@@ -26,7 +26,7 @@
 }
 
 .logo_left img {  
-  width: 25px;
+  wi dth: 25px;
   margin-left: 15px;
   margin-top: 5px;
 }
@@ -209,6 +209,12 @@
 .pontos_img img {
   margin-top: 20px;
   height: 200px;
+}
+
+.pontos_img span {
+  color: #F8D34B;
+  font-size: 40px;
+  margin-left: -100px;  
 }
 
 .img_resposta {
