@@ -6,17 +6,11 @@
         <div class="option_center">
             <ul class="itens_exe row">
                 <li repeat.for="pergunta of perguntas">
-                    <a href="#resposta-pergunta?idPergunta=${pergunta._id}&idExercicio=${idExercicio}" class="row">
-                        <img src="resources/images/svg/${imagemPergunta(pergunta)}.svg" class="img_option">
-                        <span class="col s12 span_option">${pergunta.titulo}</span>
+                    <a href="#resposta-pergunta?idPergunta=${pergunta._id}&idExercicio=${idExercicio}" class="row ${pergunta.status ? 'iten_selected' : ''}">
+                        <img src="resources/images/svg/${pergunta.status ? 'check' : pergunta.imagem}.svg" class="img_option">
+                        <span class="col s12 span_option">${pergunta.status ? 'Finalizado' : pergunta.titulo}</span>
                     </a>
-                </li>
-                <li>
-                    <a href="#" class="row iten_selected">
-                        <img src="resources/images/svg/check.svg" class="img_option">
-                        <span class="col s12 span_option">Finalizado</span>
-                    </a>
-                </li>                
+                </li>             
             </ul>
         </div>     
                 
