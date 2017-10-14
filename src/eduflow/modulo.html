@@ -1,18 +1,27 @@
 <template>
-    <div class="canvas_fluid">
-        <div class="text_top">
-            Qual a melhor forma de economizar para os hábitos abaixo:
-        </div>
-        <div class="three_center row">
-            <div class="col s6 row" repeat.for="pergunta of perguntas">
-                <a href="#resposta-pergunta?idPergunta=${pergunta._id}&idExercicio=${idExercicio}" class="col s5 option_four option_selected">
-                            <img src="resources/images/svg/${imagemPergunta(pergunta)}.svg">
-                            <span class="col s12">${pergunta.titulo}</span>
-                        </a>
-            </div>
-        </div>
+    <div class="fixed_canvas">
+        <div class="pergunta_mod">
+            <h1>Qual a melhor forma de economizar para os hábitos abaixo:</h1>
+        </div>   
+        <div class="option_center">
+            <ul class="itens_exe row">
+                <li repeat.for="pergunta of perguntas">
+                    <a href="#resposta-pergunta?idPergunta=${pergunta._id}&idExercicio=${idExercicio}" class="row">
+                        <img src="resources/images/svg/${imagemPergunta(pergunta)}.svg" class="img_option">
+                        <span class="col s12 span_option">${pergunta.titulo}</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="row iten_selected">
+                        <img src="resources/images/svg/check.svg" class="img_option">
+                        <span class="col s12 span_option">Finalizado</span>
+                    </a>
+                </li>                
+            </ul>
+        </div>     
+                
         <div class="login_btn">
-            <a href="two.html" class="waves-effect waves-light btn btn_color">CONTINUAR</a>
+            <a click.delegate="login()" class="waves-effect waves-light  btn_color">FINALIZAR EXERCÍCIO</a>            
         </div>
     </div>
 

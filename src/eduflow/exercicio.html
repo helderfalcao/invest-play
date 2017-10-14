@@ -1,22 +1,24 @@
 <template>
-    <nav class="navbar_invest">
-        <div class="nav-wrapper">
-            <a href="#" class="left logo_left">                        
-                        <img src="resources/images/svg/icone.svg" />
-                    </a>
-            <a href="#" class="right logo_right">
-                        <img src="resources/images/svg/logo.svg">
-                    </a>
-        </div>
-    </nav>
-    <div class="canvas">
-        <div class="pergunta_mod">
-            <label>Escolha um módulo abaixo:</label>
-        </div>
-        <div class="resposta_mod row">
-            <div class="col s12 option_mod" repeat.for="exercicio of exercicios">
-                <a href="#modulo-aluno?idExercicio=${exercicio._id}" class="waves-effect waves-light btn_mod btn_color">${exercicio.nome}</a>
+    <div class="fixed_canvas">                    
+      <nav class="navbar_invest">
+            <div class="nav-wrapper">
+                <a href="#" class="left logo_left">                        
+                    <img src="resources/images/svg/icone.svg" />
+                </a>
+                <a href="#" class="right logo_right">
+                    <img src="resources/images/svg/logo.svg">
+                </a>
             </div>
-        </div>
-    </div>
+        </nav>
+        <div class="fixed_canvas">
+            <div class="pergunta_mod">
+                <h1>Escolha um módulo abaixo:</h1>
+            </div>
+            <div class="resposta_mod row">                        
+                <div class="col s12 option_mod" repeat.for="exercicio of exercicios">
+                    <a href="#modulo-aluno?idExercicio=${exercicio._id}" class="waves-effect waves-light btn_mod">${exercicio.nome}</a>
+                </div>
+            </div>
+        </div> 
+    </div> 
 </template>

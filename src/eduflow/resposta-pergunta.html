@@ -1,20 +1,18 @@
 <template>
-   <div class="canvas_fluid">
-            <div class="four_content row">
-                <div class="col s12 img_resposta">
-                    <img src="resources/images/svg/${pergunta.imagem}.svg">
-                </div>
-                <div class="col s12 item_text">
-                    <label>
-                        ${pergunta.descricao}
-                    </label>
-                </div>
-                <div class="col s12">
-                    <textarea class="txt_area" value.bind="resposta.valorTexto" placeholder="Sua resposta"></textarea>
-                </div>                
-            </div>
-            <div class="login_btn">
-                <a click.delegate="salvarResposta()" class="waves-effect waves-light btn btn_color">CONTINUAR</a>
-            </div>
+   <div class="fixed_canvas">            
+        <div class="img_resposta">
+            <img src="resources/images/svg/${pergunta.imagem}.svg">
         </div>
-</template>
+         <div class="pergunta_exe">
+            <h1>
+                ${pergunta.descricao}
+            </h1>
+        </div>             
+        <div class="txt_resposta">
+            <textarea class="txt_area" value.bind="resposta.valorTexto" placeholder="Sua resposta"></textarea>
+        </div>                
+    </div>            
+    <div class="login_btn">
+        <a click.delegate="salvarResposta()" class="waves-effect waves-light  btn_color">CONTINUAR</a>            
+    </div>
+</template>       

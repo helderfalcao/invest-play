@@ -71,4 +71,9 @@ export class Modulo {
         context.perguntas = perguntas;
         context.respostas = respostas
     }
+
+    login() {
+        this.app.configurarUsuario(this.usuario);
+        this.router.navigate('exercicio-aluno');
+    }
 }
