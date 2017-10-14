@@ -27,7 +27,8 @@ export class App {
       { route: 'login-aluno', name: 'login-aluno', moduleId: 'eduflow/login' },
       { route: 'exercicio-aluno', name: 'exercicio-aluno', moduleId: 'eduflow/exercicio' },
       { route: 'modulo-aluno', name: 'modulo-aluno', moduleId: 'eduflow/modulo' },
-      { route: 'resposta-pergunta', name: 'resposta-pergunta', moduleId: 'eduflow/resposta-pergunta' }
+      { route: 'resposta-pergunta', name: 'resposta-pergunta', moduleId: 'eduflow/resposta-pergunta' },
+      { route: 'pontos-aluno', name: 'pontos-aluno', moduleId: 'eduflow/pontos' }
       
     ]);
 

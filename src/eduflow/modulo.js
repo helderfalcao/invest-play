@@ -14,6 +14,9 @@ export class Modulo {
         this.perguntaService = perguntaService;
         this.respostaService = respostaService;
         this.app = app;
+        if (!app.usuario) {
+            this.router.navigate('login-aluno');
+        }
         this.idUsuario = app.usuario;
     }
 
