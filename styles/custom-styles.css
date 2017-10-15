@@ -146,13 +146,13 @@
 }
 
 .btn_mod_disabled {
-  background: #757575;
+  background: #DCDCDC;
   color: #c5c5c5;  
   padding: 40px;
   min-width: 200px;
   min-height: 100px;
   margin-top: 50px;
-  color: #fff;
+  color: #A2A9AF;
   border-radius: 20px;
   font-size: 22px;
 }
