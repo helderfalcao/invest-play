@@ -43,16 +43,19 @@
   width: 100%;  
 }
 
-.logo_view {    
-  width: 100%;
-  height: 200px;
+.logo_view_fdt {    
+  width: 200px;
+  height: 200px;  
+  margin: 0px auto;
   text-align: center;
+  background: url(../resources/images/fdt.png) no-repeat; 
 }
-
-.logo_view img {
-  position: relative;
-  width: 140px;  
-  margin-top: 10px;
+.logo_view_edr {    
+  width: 200px;
+  height: 200px;  
+  margin: 0px auto;
+  text-align: center;
+  background: url(../resources/images/svg/edna.svg) no-repeat; 
 }
 
 .frase_login {
