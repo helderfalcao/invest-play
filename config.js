@@ -13,6 +13,7 @@ System.config({
     "npm:*": "jspm_packages/npm/*",
     "bower:*": "jspm_packages/bower/*"
   },
+
   map: {
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.1",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0",
@@ -21,6 +22,7 @@ System.config({
     "aurelia-framework": "npm:aurelia-framework@1.1.2",
     "aurelia-history-browser": "npm:aurelia-history-browser@1.0.0",
     "aurelia-loader-default": "npm:aurelia-loader-default@1.0.2",
+    "aurelia-logging": "npm:aurelia-logging@1.3.1",
     "aurelia-logging-console": "npm:aurelia-logging-console@1.0.0",
     "aurelia-materialize-bridge": "npm:aurelia-materialize-bridge@0.28.0",
     "aurelia-pal": "npm:aurelia-pal@1.4.0",
