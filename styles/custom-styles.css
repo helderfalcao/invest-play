@@ -354,7 +354,7 @@ header .header-img img {
 .notebook-container {
     position: relative;
     max-width: 800px;
-    width: 100%;
+    width: 100%;    
     margin: 4rem auto 2rem;
     display: inline-block;
 }
